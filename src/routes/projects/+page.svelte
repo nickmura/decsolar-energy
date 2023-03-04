@@ -51,7 +51,7 @@
                             <div class="absolute" style="width: 569px; height: 381px; left: 394px; top: 218px;">
                                 
                                 <div class="inline-flex flex-col space-y-6 items-end justify-center pl-0.5 pb-3 bg-white shadow rounded-2xl" style="width: 569px; height: 381px;">
-                                    <img class="rounded-2xl" style="width: 568px; height: 183px;" src="../../../../img/SolarBarranquilla.jpg" alt=""/>
+                                    <img class="rounded-2xl" style="width: 568px; height: 183px;" src="../../../../img/solarBaranquilla.jpg" alt=""/>
                                     <div class="relative" style="width: 521px; height: 150px;">
                                         
                                         <p class="absolute left-0 top-0 text-2xl font-bold text-gray-800">Hospital Of Baranquilla</p>
@@ -79,7 +79,7 @@
                                 <div class="inline-flex flex-col space-y-6 items-end justify-end pl-0.5 pb-3 bg-white shadow rounded-2xl" style="width: 569px; height: 381px;">
                                     <img class="rounded-2xl" style="width: 568px; height: 183px;" src="../../../../img/solarCapeTown.jpg" alt=""/>
                                     <div class="relative" style="width: 526px; height: 160px;">
-                                        <p class="absolute right-0 bottom-0 text-2xl font-bold text-gray-800">University of Cape Town</p>
+                                        <p class="absolute left-0 top-0 text-2xl font-bold text-gray-800">University of Cape Town</p>
                                         <p class="absolute right-0 bottom-0 text-lg text-gray-500">Cape Town, South Africa</p>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-28 h-20 absolute" style="left: 401px; top: 698px;">
                                             <p class="text-lg text-gray-800">Project Cost</p>
@@ -87,15 +87,15 @@
                                         </div>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-16 h-16 absolute right-0 bottom-0">
                                             <p class="text-lg text-gray-800">APR</p>
-                                            <p class="text-xl font-bold text-green-700">12.2%</p>
+                                            <p class="text-md font-bold text-green-700">12.2%</p>
                                         </div>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-16 absolute right-0 bottom-0">
                                             <p class="text-lg text-gray-800">Date</p>
-                                            <p class="text-xl font-bold text-green-700">28/09/23</p>
+                                            <p class="text-md font-bold text-green-700">28/09/23</p>
                                         </div>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-28 h-16 absolute right-0 bottom-0">
-                                            <p class="text-lg text-right text-gray-800">% Completed</p>
-                                            <p class="text-xl font-bold text-right text-green-700">14.7%</p>
+                                            <p class="text-md text-right text-gray-800">% Completed</p>
+                                            <p class="text-md font-bold text-right text-green-700">14.7%</p>
                                         </div>
                                     </div>
                                 </div>
@@ -107,23 +107,23 @@
                                         <img class="rounded-2xl" style="width: 568px; height: 183px;" src="../../../../img/solarBTCTexas.jpg" alt=""/>
                                        
                                         <div class="relative" style="width: 534px; height: 160px;">
-                                        <p class="absolute right-0 bottom-0 text-2xl font-bold text-gray-800">BTC Mining Texas</p>
+                                        <p class="absolute left-0 top-0 text-2xl font-bold text-gray-800">BTC Mining Texas</p>
                                         <p class="absolute right-0 bottom-0 text-lg text-gray-500">Houston, USA</p>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-28 h-20 absolute right-0 bottom-0">
-                                            <p class="text-lg text-gray-800">Project Cost</p>
+                                            <p class="text-md text-gray-800">Project Cost</p>
                                             <p class="opacity-80 text-base font-bold text-green-700">$820,000  or                     1,640,000 P2P</p>
                                         </div>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-16 h-16 absolute right-0 bottom-0">
-                                            <p class="text-lg text-gray-800">APR</p>
-                                            <p class="text-xl font-bold text-green-700">13.2%</p>
+                                            <p class="text-md text-gray-800">APR</p>
+                                            <p class="text-md font-bold text-green-700">13.2%</p>
                                         </div>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-16 absolute right-0 bottom-0">
-                                            <p class="text-lg text-gray-800">Date</p>
-                                            <p class="text-xl font-bold text-green-700">19/08/23</p>
+                                            <p class="text-md text-gray-800">Date</p>
+                                            <p class="text-md font-bold text-green-700">19/08/23</p>
                                         </div>
                                         <div class="inline-flex flex-col space-y-3 items-end justify-end w-28 h-16 absolute right-0 bottom-0">
-                                            <p class="text-lg text-right text-gray-800">% Completed </p>
-                                            <p class="text-xl font-bold text-right text-green-700">20.5%</p>
+                                            <p class="text-md text-right text-gray-800">% Completed </p>
+                                            <p class="text-md font-bold text-right text-green-700">20.5%</p>
                                         </div>
                                         
                                     </div>
@@ -133,33 +133,33 @@
                                 <div class="inline-flex flex-col space-y-6 items-end justify-end pl-0.5 pb-3 bg-white shadow rounded-2xl" style="width: 569px; height: 381px;">
                                     <img class="rounded-2xl" style="width: 568px; height: 183px;" src="../../../../img/solarSchoolPembrokePines.jpg" alt=""/>
                                     <div class="relative" style="width: 534px; height: 160px;">
-                                        <p class="absolute right-0 bottom-0 text-2xl font-bold text-gray-800">Silver Trail Middle School</p>
+                                        <p class="absolute left-0 top-0 text-2xl font-bold text-gray-800">Silver Trail Middle School</p>
                                         <p class="absolute right-0 bottom-0 text-lg text-gray-500">Pembroke Pines, USA</p>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-20 absolute right-0 bottom-0">
-                                            <p class="text-lg text-gray-800">Project Cost</p>
+                                            <p class="text-md text-gray-800">Project Cost</p>
                                             <p class="text-base font-bold text-green-700">$558,000 or                     1,116,000 P2P</p>
                                         </div>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-16 h-16 absolute right-0 bottom-0">
-                                            <p class="text-lg text-gray-800">APR</p>
-                                            <p class="text-xl font-bold text-green-700">14.2%</p>
+                                            <p class="text-md text-gray-800">APR</p>
+                                            <p class="text-md font-bold text-green-700">14.2%</p>
                                         </div>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-16 absolute right-0 bottom-0">
-                                            <p class="text-lg text-gray-800">Date</p>
-                                            <p class="text-xl font-bold text-green-700">15/02/23</p>
+                                            <p class="text-md text-gray-800">Date</p>
+                                            <p class="text-md font-bold text-green-700">15/02/23</p>
                                         </div>
                                         <div class="inline-flex flex-col space-y-3 items-end justify-end w-28 h-16 absolute right-0 bottom-0">
-                                            <p class="text-lg text-right text-gray-800">% Completed</p>
-                                            <p class="text-xl font-bold text-right text-green-700">60.5%</p>
+                                            <p class="text-md text-right text-gray-800">% Completed</p>
+                                            <p class="text-md font-bold text-right text-green-700">60.5%</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <img alt='ffdsds' class="w-6 h-6 absolute" style="left: 530px; top: 552px;" src="https://via.placeholder.com/26x24"/>
-                            <img alt='ffdsds' class="w-6 h-6 absolute" style="left: 539px; top: 965px;" src="https://via.placeholder.com/26x24"/>
-                            <img alt='ffdsds' class="w-6 h-6 absolute" style="left: 1119px; top: 966px;" src="https://via.placeholder.com/26x24"/>
-                            <img alt='ffdsds' class="w-6 h-6 absolute" style="left: 1132px; top: 564px;" src="https://via.placeholder.com/26x24"/>
-                            <img alt='ffdsds' class="absolute rounded-2xl" style="width: 569px; height: 183px; left: 395px; top: 619px;" src="https://via.placeholder.com/569x183"/>
-                            <img alt='ffdsds' class="absolute rounded-2xl" style="width: 568px; height: 183px; left: 984px; top: 218px;" src="https://via.placeholder.com/568x183"/>
+                            <img alt='placeholder' class="w-6 h-6 absolute" style="left: 530px; top: 552px;" src="https://via.placeholder.com/26x24"/>
+                            <img alt='placeholder' class="w-6 h-6 absolute" style="left: 539px; top: 965px;" src="https://via.placeholder.com/26x24"/>
+                            <img alt='placeholder' class="w-6 h-6 absolute" style="left: 1119px; top: 966px;" src="https://via.placeholder.com/26x24"/>
+                            <img alt='placeholder' class="w-6 h-6 absolute" style="left: 1132px; top: 564px;" src="https://via.placeholder.com/26x24"/>
+                            <img alt='placeholder' class="absolute rounded-2xl" style="width: 569px; height: 183px; left: 395px; top: 619px;" src="https://via.placeholder.com/569x183"/>
+                            <img alt='placeholder' class="absolute rounded-2xl" style="width: 568px; height: 183px; left: 984px; top: 218px;" src="https://via.placeholder.com/568x183"/>
                         </div>
                        
             
