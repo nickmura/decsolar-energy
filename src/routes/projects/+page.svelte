@@ -16,9 +16,9 @@
             
                         <div class="relative bg-gray-100" style="width: 1607px; height: 1040px;">
                             <div class="inline-flex space-x-96 items-center justify-start transform -rotate-180 h-9 absolute right-0 top-0">
-                                <p class="text-lg text-green-700">ES</p>
-                                <div class="transform -rotate-180 w-2.5 h-1/6 bg-green-700 rounded-full"/>
-                                <div class="transform -rotate-180 w-9 h-full bg-green-700 rounded-lg"/>
+                                <p class="text-lg text-green-700"></p>
+                             
+                                
                             </div>
                             <div class="relative absolute left-0 top-0" style="width: 334px; height: 1040px;">
                                 <div class="inline-flex flex-col space-y-16 items-start justify-center w-80 h-40 pl-7 pr-6 pb-16 absolute bg-green-700" style="left: 0px; top: 309px;">
@@ -57,12 +57,12 @@
                             <p class="absolute text-xl font-bold text-gray-500" style="left: 790px; top: 129px;">Completed</p>
                             <div class="absolute" style="width: 569px; height: 381px; left: 394px; top: 218px;">
                                 
-                                <div class="inline-flex flex-col space-y-6 items-end justify-end pl-0.5 pb-3 bg-white shadow rounded-2xl" style="width: 569px; height: 381px;">
-                                    <img class="rounded-2xl" style="width: 568px; height: 183px;" src="../../../../img/SolarBaranquilla.jpg" alt=""/>
+                                <div class="inline-flex flex-col space-y-6 items-end justify-center pl-0.5 pb-3 bg-white shadow rounded-2xl" style="width: 569px; height: 381px;">
+                                    <img class="rounded-2xl" style="width: 568px; height: 183px;" src="../../../../img/SolarBarranquilla.jpg" alt=""/>
                                     <div class="relative" style="width: 521px; height: 150px;">
                                         
-                                        <p class="absolute right-0 bottom-0 text-2xl font-bold text-gray-800">Hospital Of Baranquilla</p>
-                                        <p class="absolute right-0 bottom-0 text-lg text-gray-500">Baranquilla, Colombia</p>
+                                        <p class="absolute left-0 top-0 text-2xl font-bold text-gray-800">Hospital Of Baranquilla</p>
+                                        <p class="absolute left-0 bottom-0 text-sml text-gray-500">Baranquilla, Colombia</p>
                                         <div class="inline-flex flex-col space-y-0.5 items-center justify-end w-32 h-16 absolute right-0 bottom-0">
                                             <p class="text-lg text-gray-800">Project Cost</p>
                                             <p class="w-full text-base font-bold text-green-700">$400,000 or 800,000 P2P </p>
@@ -83,7 +83,8 @@
                                 </div>
                             </div>
                             <div class="absolute" style="width: 569px; height: 381px; left: 394px; top: 619px;">
-                                <div class="flex items-end justify-center pl-6 pr-4 pt-52 pb-3 bg-white shadow rounded-2xl" style="width: 569px; height: 381px;">
+                                <div class="inline-flex flex-col space-y-6 items-end justify-end pl-0.5 pb-3 bg-white shadow rounded-2xl" style="width: 569px; height: 381px;">
+                                    <img class="rounded-2xl" style="width: 568px; height: 183px;" src="../../../../img/solarCapeTown.jpg" alt=""/>
                                     <div class="relative" style="width: 526px; height: 160px;">
                                         <p class="absolute right-0 bottom-0 text-2xl font-bold text-gray-800">University of Cape Town</p>
                                         <p class="absolute right-0 bottom-0 text-lg text-gray-500">Cape Town, South Africa</p>
@@ -109,8 +110,8 @@
                             <div class="absolute" style="width: 569px; height: 381px; left: 983px; top: 218px;">
                                 
                               
-                                    <div class="inline-flex flex-col space-y-6 items-end justify-center pl-0.5 pb-3 bg-white shadow rounded-2xl" style="width: 569px; height: 381px;">
-                                        <img class="rounded-2xl" style="width: 568px; height: 183px;" src="../../../../img/solarSchoolBTCTexas.jpg" alt=""/>
+                                    <div class="inline-flex flex-col space-y-6 items-end justify-end pl-0.5 pb-3 bg-white shadow rounded-2xl" style="width: 569px; height: 381px;">
+                                        <img class="rounded-2xl" style="width: 568px; height: 183px;" src="../../../../img/solarBTCTexas.jpg" alt=""/>
                                        
                                         <div class="relative" style="width: 534px; height: 160px;">
                                         <p class="absolute right-0 bottom-0 text-2xl font-bold text-gray-800">BTC Mining Texas</p>
@@ -160,12 +161,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <img class="w-6 h-6 absolute" style="left: 530px; top: 552px;" src="https://via.placeholder.com/26x24"/>
-                            <img class="w-6 h-6 absolute" style="left: 539px; top: 965px;" src="https://via.placeholder.com/26x24"/>
-                            <img class="w-6 h-6 absolute" style="left: 1119px; top: 966px;" src="https://via.placeholder.com/26x24"/>
-                            <img class="w-6 h-6 absolute" style="left: 1132px; top: 564px;" src="https://via.placeholder.com/26x24"/>
-                            <img class="absolute rounded-2xl" style="width: 569px; height: 183px; left: 395px; top: 619px;" src="https://via.placeholder.com/569x183"/>
-                            <img class="absolute rounded-2xl" style="width: 568px; height: 183px; left: 984px; top: 218px;" src="https://via.placeholder.com/568x183"/>
+                            <img class="w-6 h-6 absolute" style="left: 530px; top: 552px;" src="../../../../img/logo.jpg" alt=""/>
+                            <img class="w-6 h-6 absolute" style="left: 539px; top: 965px;" src="../../../../img/logo.jpg" alt=""/>
+                            <img class="w-6 h-6 absolute" style="left: 1119px; top: 966px;" src="../../../../img/logo.jpg" alt=""/>
+                            <img class="w-6 h-6 absolute" style="left: 1132px; top: 564px;" src="../../../../img/logo.jpg" alt=""/>
+                            <img class="absolute rounded-2xl" style="width: 569px; height: 183px; left: 395px; top: 619px;" src="../../../../img/logo.jpg" alt=""/>
+                            <img class="absolute rounded-2xl" style="width: 568px; height: 183px; left: 984px; top: 218px;" src="../../../../img/logo.jpg" alt=""/>
                         </div>
                        
             
