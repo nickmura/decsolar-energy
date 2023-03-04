@@ -1,5 +1,5 @@
 <script>
-    //@ts-ignroregi
+    //@ts-ignore
     import Navbar from '$lib/reusable/Navbar.svelte'
     
 
