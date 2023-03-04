@@ -24,7 +24,7 @@
                 walletAddress.set(accounts[0])
                 if (network.chainId !== BigInt(84531)) { // if network Base
                 await provider.send('wallet_switchEthereumChain', [{ chainId: `0x${baseChainID.toString(16)}` }])
-                }
+            }
 
             } catch (err) {
                 if (err instanceof Error)
