@@ -58,12 +58,14 @@
                                         <p class="w-28 h-16 absolute right-0 top-0  text-md font-bold text-gray-500">Baranquilla, Colombia</p>
                                         <div class="inline-flex flex-col space-y-0.5 items-center justify-mid w-24 h-16 relative left-14 -bottom-20">
                                             <div class="text-md font-bold  text-gray-500">Project Cost:</div> 
-                                            <p class="w-full text-base font-bold text-green-700">      $        400,000     800,000 </p>
+                                            <p class="w-full text-base font-bold text-green-700">      $ 400,000 800,000 </p>
+                                            <span class="inline-flex flex-col space-y-10 items-center justify-end w-20 h-16 relative left-20 bottom-16">
+                                                <p class="text-md font-bold  text-gray-500">APR:</p>
+                                                
+                                                <p class="text-md font-bold text-green-700">15.2%</p>
+                                            </span>
                                         </div>
-                                        <div class="inline-flex flex-col space-y-3 items-center justify-end w-16 h-16 absolute right-0 bottom-0">
-                                            <p class="text-lg text-gray-800">APR</p>
-                                            <p class="text-xl font-bold text-green-700">15.2%</p>
-                                        </div>
+                                       
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-16 absolute right-0 bottom-0">
                                           
                                         </div>
@@ -81,11 +83,13 @@
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-22 relative left-14 -bottom-20">
                                             <div class="text-md font-bold  text-gray-500">Project Cost:</div> 
                                             <p class="opacity-80 text-base font-bold text-green-700">$500,000 1,000,000</p>
+                                            <span class="inline-flex flex-col space-y-10 items-center justify-end w-20 h-16 relative left-20 -top-20">
+                                                <p class="text-md font-bold  text-gray-500">APR:</p>
+                                                
+                                                <p class="text-md font-bold text-green-700">12.2%</p>
+                                            </span>
                                         </div>
-                                        <div class="inline-flex flex-col space-y-3 items-center justify-end w-16 h-16 absolute right-0 bottom-0">
-                                            <p class="text-lg text-gray-800">APR</p>
-                                            <p class="text-xl font-bold text-green-700">12.2%</p>
-                                        </div>
+                                        
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-16 absolute right-0 bottom-0">
                                          
                                         </div>
@@ -106,11 +110,13 @@
                                         <div class="inline-flex flex-col space-y-3 items-center  w-24  h-20 absolute relative left-14 -bottom-20">
                                             <div class="text-md font-bold  text-gray-500">Project Cost:</div> 
                                             <p class="opacity-80 text-base font-bold text-green-700">$820,000 1,640,000</p>
+                                            <span class="inline-flex flex-col space-y-10 items-center justify-end w-20 h-16 relative left-20 -top-20">
+                                                <p class="text-md font-bold  text-gray-500">APR:</p>
+                                                
+                                                <p class="text-md font-bold text-green-700">13.2%</p>
+                                            </span>
                                         </div>
-                                        <div class="inline-flex flex-col space-y-3 items-center justify-end w-16 h-16 absolute right-0 bottom-0">
-                                            <p class="text-lg text-gray-800">APR</p>
-                                            <p class="text-xl font-bold text-green-700">13.2%</p>
-                                        </div>
+                                      
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-16 absolute right-0 bottom-0">
                                          
                                         </div>
@@ -129,11 +135,13 @@
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-20 absolute relative left-14 -bottom-20">
                                         <div class="text-md font-bold  text-gray-500">Project Cost:</div> 
                                             <p class="text-base font-bold text-green-700" >$558,000 1,116,000 </p>
+                                            <span class="inline-flex flex-col space-y-10 items-center justify-end w-20 h-16 relative left-20 -top-20">
+                                                <p class="text-md font-bold  text-gray-500">APR:</p>
+                                                
+                                                <p class="text-md font-bold text-green-700">13.2%</p>
+                                            </span>
                                         </div>
-                                        <div class="inline-flex flex-col space-y-3 items-center justify-end w-16 h-16 absolute right-0 bottom-0">
-                                            <p class="text-lg text-gray-800">APR</p>
-                                            <p class="text-xl font-bold text-green-700">14.2%</p>
-                                        </div>
+
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-16 absolute right-0 bottom-0">
                                             
                                         </div>
