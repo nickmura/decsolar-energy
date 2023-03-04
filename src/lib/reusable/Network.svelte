@@ -118,7 +118,7 @@
     </button>
     {#if isExpanded}
     <div class='animate-fade-in-up absolute flex w-full flex-column 
-    border border-[#dddBe6] rounded-lg flex-wrap  mt-2'>
+    border border-[#dddBe6] rounded-lg flex-wrap  mt-2 z-20'>
         <div class='flex w-full gap-2 font-bold rounded-lg'>
             <ul class="w-full">
                 
