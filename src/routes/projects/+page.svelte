@@ -135,9 +135,9 @@
                                     <div class="relative" style="width: 534px; height: 160px;">
                                         <p class="absolute left-0 top-0 text-2xl font-bold text-gray-800">Silver Trail Middle School</p>
                                         <p class="absolute left-0 bottom-0 text-lg text-gray-500">Pembroke Pines, USA</p>
-                                        <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-20 absolute right-0 bottom-0">
+                                        <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-20 absolute right-0 top-0">
                                             <p class="text-md text-gray-800">Project Cost</p>
-                                            <p class="text-base font-bold text-green-700">$558,000 or                     1,116,000 P2P</p>
+                                            <p class="text-base font-lg text-green-700">USDC:$558,000 P2P:1,116,000 </p>
                                         </div>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-16 h-16 absolute right-0 bottom-0">
                                             <p class="text-md text-gray-800">APR</p>
@@ -154,12 +154,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <img alt='placeholder' class="w-6 h-6 absolute" style="left: 530px; top: 552px;" src="https://via.placeholder.com/26x24"/>
-                            <img alt='placeholder' class="w-6 h-6 absolute" style="left: 539px; top: 965px;" src="https://via.placeholder.com/26x24"/>
-                            <img alt='placeholder' class="w-6 h-6 absolute" style="left: 1119px; top: 966px;" src="https://via.placeholder.com/26x24"/>
-                            <img alt='placeholder' class="w-6 h-6 absolute" style="left: 1132px; top: 564px;" src="https://via.placeholder.com/26x24"/>
-                            <img alt='placeholder' class="absolute rounded-2xl" style="width: 569px; height: 183px; left: 395px; top: 619px;" src="https://via.placeholder.com/569x183"/>
-                            <img alt='placeholder' class="absolute rounded-2xl" style="width: 568px; height: 183px; left: 984px; top: 218px;" src="https://via.placeholder.com/568x183"/>
+
                         </div>
                        
             
