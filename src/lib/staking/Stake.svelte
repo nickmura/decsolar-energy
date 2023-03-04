@@ -1,7 +1,7 @@
-<script>
-// @ts-nocheck
+<script lang='ts'>
+
 import { onMount } from "svelte";
-import { ethers, Contract, BrowserProvider } from "ethers";
+import { ethers, Contract, BrowserProvider, formatEther, type BigNumberish } from "ethers";
 import { 
   walletAddress, 
   totalStaked, 
@@ -15,25 +15,39 @@ import {
   P2PStakingContractMumbai
 } from "$lib/state/state";
 
+
+
+import { Modal, modalStore } from '@skeletonlabs/skeleton';
+import type { ModalSettings, ModalComponent } from '@skeletonlabs/skeleton';
+
+
+let P2PStaked:number | string = 0
+
 onMount(() => {
-  getP2PBalance()
+  // getP2PBalance()
 })
 import ERC20ABI from '$lib/abi/ERC20.json'
 import P2PTokenABI from '$lib/abi/P2PToken.json'
 import StakingABI from '$lib/abi/P2PToken.json'
 
 
-let P2PBalance
+walletAddress.subscribe(address => {
+  if ($walletAddress) getP2PBalance()
+})
+
+let P2PBalance:BigNumberish = 0n
+
 async function getP2PBalance() {
+  //@ts-ignore
   const provider = new BrowserProvider(window.ethereum, "any")
   const P2P = await new Contract(P2PTokenContractBaseGoerli, P2PTokenABI, provider);
-  P2PBalance = await P2P.balanceOf($walletAddress) / BigInt(10 ** 18)
-  
+  P2PBalance = await P2P.balanceOf($walletAddress)
 }
 
 
 let isOpen = false
 function toggleDrawer() {
+  console.log(isOpen)
   isOpen = !isOpen
 }
 
@@ -75,7 +89,7 @@ function toggleDrawer() {
           <li class="flex gap-10 justify-between mt-3">
             <span class="block text-xs">Wallet Balance</span>
             <span class="block text-xs text-skin-muted ">
-              {P2PBalance} P2P 
+              {formatEther(P2PBalance)} P2P 
             </span>
           </li>
         </ul>
@@ -85,7 +99,6 @@ function toggleDrawer() {
           text-white w-full hover:scale-[1.05] transition'>Stake P2P</button>
         </div>
       </div>
-
 
       <div class="basis-[55%] text-center ">
         <div class="flex flex-col gap-2">
@@ -109,5 +122,25 @@ function toggleDrawer() {
         </div>
       </div>
     </div>
-    
+    {#if !isOpen}
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <div class="absolute top-0 left-0 w-screen min-h-screen flex items-center justify-center bg-gray-500/20 rounded-xl" on:click|self={toggleDrawer}>
+          <div class="bg-white rounded-xl p-4 w-80 h-56 bg-slate-50 shadow-xl">
+            <div class='justify-center w-full'>
+              <div class='text-md font-bold mb-4 font-bold'>Stake P2P</div>
+              <input bind:value={P2PStaked} type='range' min={0} max={Number(formatEther(P2PBalance))} class='w-full'>
+              <div class='text-[10px] text-gray-800 italic'>Percent Staked: { ((Number(P2PStaked) / Number(formatEther(P2PBalance))) * 100).toFixed(1)}%</div>
+              <!-- <input type='number' bind:value={P2PStaked} min=0 max={Number(formatEther(P2PBalance))} class='font-bold'/>Amount to Stake: {Number(P2PStaked).toLocaleString('us')} P2P -->
+              <div class='flex flex-row mr-2'>To Be Staked: <input type='number' bind:value={P2PStaked} min='0' max={Number(formatEther(P2PBalance))} class='w-fit flex 
+                    font-bold outline-none active:appearance-none [appearance:textfield] no-spinner ml-2 mr-2' /> P2P</div>
+              <input type='radio' class='mt-4'/>
+            </div>
+          </div>
+        </div>
+    {/if}
   </div>
+
+  <style>
+
+
+  </style>

@@ -44,7 +44,7 @@
         {#if !$walletAddress}
             <button on:click={connectMetamask} class='text-white px-2 py-2 w-56  flex items-center gap-3 rounded-lg bg-[#0052fe] hover:scale-[1.05] transition' name="Create Account">
                 <img src='/img/metamask.svg' alt="metamask" class='w-[35px] h-[35px]'/>
-                <span>Connect Metamask</span>   
+                <span>Connect Wallet</span>   
             </button> 
         {:else}
             <button class='text-white px-2 py-2 w-48 flex items-center gap-3 rounded-lg bg-[#0052fe] hover:scale-[1.05] transition' name="Create Account">

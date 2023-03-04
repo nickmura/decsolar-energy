@@ -25,6 +25,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@skeletonlabs/skeleton": "^0.132.5",
 		"ethers": "^6.0.8"
 	}
 }
