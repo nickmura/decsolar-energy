@@ -65,8 +65,7 @@
                                             <p class="text-xl font-bold text-green-700">15.2%</p>
                                         </div>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-16 absolute right-0 bottom-0">
-                                            <p class="text-lg text-gray-800">Date</p>
-                                            <p class="text-xl font-bold text-green-700">15/06/23</p>
+                                          
                                         </div>
 
                                
@@ -85,11 +84,10 @@
                                         </div>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-16 h-16 absolute right-0 bottom-0">
                                             <p class="text-lg text-gray-800">APR</p>
-                                            <p class="text-md font-bold text-green-700">12.2%</p>
+                                            <p class="text-xl font-bold text-green-700">12.2%</p>
                                         </div>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-16 absolute right-0 bottom-0">
-                                            <p class="text-lg text-gray-800">Date</p>
-                                            <p class="text-md font-bold text-green-700">28/09/23</p>
+                                         
                                         </div>
 
                                         </div>
@@ -105,17 +103,16 @@
                                         <div class="relative" style="width: 534px; height: 160px;">
                                         <p class="absolute left-0 top-0 text-2xl font-bold text-gray-800">BTC Mining Texas</p>
                                         <p class="absolute left-0 bottom-0 text-lg text-gray-500">Houston, USA</p>
-                                        <div class="inline-flex flex-col space-y-3 items-center justify-end w-28 h-20 absolute right-0 bottom-0">
+                                        <div class="inline-flex flex-col space-y-3 items-center justify-end w-28 h-20 absolute right-0 top-0">
 
                                             <p class="opacity-80 text-base font-bold text-green-700">$820,000 1,640,000 P2P</p>
                                         </div>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-16 h-16 absolute right-0 bottom-0">
-                                            <p class="text-md text-gray-800">APR</p>
-                                            <p class="text-md font-bold text-green-700">13.2%</p>
+                                            <p class="text-lg text-gray-800">APR</p>
+                                            <p class="text-xl font-bold text-green-700">13.2%</p>
                                         </div>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-16 absolute right-0 bottom-0">
-                                            <p class="text-md text-gray-800">Date</p>
-                                            <p class="text-md font-bold text-green-700">19/08/23</p>
+                                         
                                         </div>
  
                                         
@@ -131,15 +128,14 @@
                                         <p class="absolute left-0 bottom-0 text-lg text-gray-500">Pembroke Pines, USA</p>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-20 absolute right-0 top-0">
                                          
-                                            <p class="text-base font-lg text-green-700">USDC:$558,000 P2P:1,116,000 </p>
+                                            <p class="text-base font-bold text-green-700">$558,000 1,116,000 P2P </p>
                                         </div>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-16 h-16 absolute right-0 bottom-0">
-                                            <p class="text-md text-gray-800">APR</p>
-                                            <p class="text-md font-bold text-green-700">14.2%</p>
+                                            <p class="text-lg text-gray-800">APR</p>
+                                            <p class="text-xl font-bold text-green-700">14.2%</p>
                                         </div>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-16 absolute right-0 bottom-0">
-                                            <p class="text-md text-gray-800">Date</p>
-                                            <p class="text-md font-bold text-green-700">15/02/23</p>
+                                            
                                         </div>
                    
                                         </div>
