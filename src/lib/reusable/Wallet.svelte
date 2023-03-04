@@ -1,7 +1,7 @@
 <script>
     import { onMount } from 'svelte';
     import { ethers, BrowserProvider } from 'ethers';
-    import { walletAddress } from "$lib/state/state";
+    import { walletAddress, totalStaked, cooldownPeriod, claimPerMonth, totalClaimable } from "$lib/state/state";
 
     onMount(async () => {
         //@ts-ignore

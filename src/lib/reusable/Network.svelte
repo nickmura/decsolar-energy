@@ -125,7 +125,7 @@
                 <li class="border-b border-[#dddBe6] w-full ">
                     <button on:click={(e)=>changeNetwork('Base')} class='w-full'>
                         <span class="transition flex gap-2 px-2 py-2 cursor-pointer">
-                            <img src='./coinbase-logo.svg' alt='coinbase`' class='w-5 h-5 mt-0.5'/>
+                            <img src='./coinbase-logo.svg' alt='coinbase' class='w-5 h-5 mt-0.5'/>
                             <span>Base</span>
                         </span>
                     </button>
