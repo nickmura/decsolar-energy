@@ -87,7 +87,7 @@
                                     <img class="rounded-2xl" style="width: 568px; height: 183px;" src="../../../../img/solarCapeTown.jpg" alt=""/>
                                     <div class="relative" style="width: 526px; height: 160px;">
                                         <p class="absolute left-0 top-0 text-2xl font-bold text-gray-800">University of Cape Town</p>
-                                        <p class="absolute right-0 bottom-0 text-lg text-gray-500">Cape Town, South Africa</p>
+                                        <p class="absolute left-0 bottom-0 text-lg text-gray-500">Cape Town, South Africa</p>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-28 h-20 absolute" style="left: 401px; top: 698px;">
                                             <p class="text-lg text-gray-800">Project Cost</p>
                                             <p class="text-base font-bold text-green-700">$500,000 or <br/>1,000,000 P2P</p>
@@ -115,7 +115,7 @@
                                        
                                         <div class="relative" style="width: 534px; height: 160px;">
                                         <p class="absolute left-0 top-0 text-2xl font-bold text-gray-800">BTC Mining Texas</p>
-                                        <p class="absolute right-0 bottom-0 text-lg text-gray-500">Houston, USA</p>
+                                        <p class="absolute left-0 bottom-0 text-lg text-gray-500">Houston, USA</p>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-28 h-20 absolute right-0 bottom-0">
                                             <p class="text-md text-gray-800">Project Cost</p>
                                             <p class="opacity-80 text-base font-bold text-green-700">$820,000  or                     1,640,000 P2P</p>
@@ -141,7 +141,7 @@
                                     <img class="rounded-2xl" style="width: 568px; height: 183px;" src="../../../../img/solarSchoolPembrokePines.jpg" alt=""/>
                                     <div class="relative" style="width: 534px; height: 160px;">
                                         <p class="absolute left-0 top-0 text-2xl font-bold text-gray-800">Silver Trail Middle School</p>
-                                        <p class="absolute right-0 bottom-0 text-lg text-gray-500">Pembroke Pines, USA</p>
+                                        <p class="absolute left-0 bottom-0 text-lg text-gray-500">Pembroke Pines, USA</p>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-20 absolute right-0 bottom-0">
                                             <p class="text-md text-gray-800">Project Cost</p>
                                             <p class="text-base font-bold text-green-700">$558,000 or                     1,116,000 P2P</p>
