@@ -57,7 +57,6 @@ import { walletAddress, totalStaked, cooldownPeriod, claimPerMonth, totalClaimab
       </div>
 
       <button on:click={toggleDrawer} />
-      <!-- {#if isOpen} -->
       <div class="basis-[55%] text-center ">
         <div class="flex flex-col gap-2">
           <h2 class="text-lg text-skin-lightDark">Staked {p2p.title}</h2>
@@ -79,7 +78,6 @@ import { walletAddress, totalStaked, cooldownPeriod, claimPerMonth, totalClaimab
           </button>
         </div>
       </div>
-    <!-- {/if} -->
     </div>
     
   </div>
