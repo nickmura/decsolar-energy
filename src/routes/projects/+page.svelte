@@ -1,14 +1,7 @@
-
-
-
-
-
-            <script>
-                //@ts-ignore
-                import Navbar from '$lib/reusable/Navbar.svelte'
-                
-            
-            </script>
+<script>
+    //@ts-ignore
+    import Navbar from '$lib/reusable/Navbar.svelte'
+</script>
             <Navbar/>
             
             
@@ -160,29 +153,27 @@
                                     </div>
                                 </div>
                             </div>
-                            <img class="w-6 h-6 absolute" style="left: 530px; top: 552px;" src="https://via.placeholder.com/26x24"/>
-                            <img class="w-6 h-6 absolute" style="left: 539px; top: 965px;" src="https://via.placeholder.com/26x24"/>
-                            <img class="w-6 h-6 absolute" style="left: 1119px; top: 966px;" src="https://via.placeholder.com/26x24"/>
-                            <img class="w-6 h-6 absolute" style="left: 1132px; top: 564px;" src="https://via.placeholder.com/26x24"/>
-                            <img class="absolute rounded-2xl" style="width: 569px; height: 183px; left: 395px; top: 619px;" src="https://via.placeholder.com/569x183"/>
-                            <img class="absolute rounded-2xl" style="width: 568px; height: 183px; left: 984px; top: 218px;" src="https://via.placeholder.com/568x183"/>
+                            <img alt='ffdsds' class="w-6 h-6 absolute" style="left: 530px; top: 552px;" src="https://via.placeholder.com/26x24"/>
+                            <img alt='ffdsds' class="w-6 h-6 absolute" style="left: 539px; top: 965px;" src="https://via.placeholder.com/26x24"/>
+                            <img alt='ffdsds' class="w-6 h-6 absolute" style="left: 1119px; top: 966px;" src="https://via.placeholder.com/26x24"/>
+                            <img alt='ffdsds' class="w-6 h-6 absolute" style="left: 1132px; top: 564px;" src="https://via.placeholder.com/26x24"/>
+                            <img alt='ffdsds' class="absolute rounded-2xl" style="width: 569px; height: 183px; left: 395px; top: 619px;" src="https://via.placeholder.com/569x183"/>
+                            <img alt='ffdsds' class="absolute rounded-2xl" style="width: 568px; height: 183px; left: 984px; top: 218px;" src="https://via.placeholder.com/568x183"/>
                         </div>
                        
             
                 <style>
                     .div {
                         position: absolute;
-            width: 569px;
-            height: 381px;
-            left: 394px;
-            top: 218px;
-            
-            background: #FFFFFF;
-            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
-            border-radius: 15px;
-              
-            }
-            .property{position: sticky;
+                        width: 569px;
+                        height: 381px;
+                        left: 394px;
+                        top: 218px;
+                        background: #FFFFFF;
+                        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+                        border-radius: 15px;
+                    }
+                    .property{position: sticky;
                     width: 276px;
                     height: 34px;
                     left: 420px;
@@ -197,7 +188,7 @@
                     color: #333333;}
             
                     .location{position: sticky;
-            width: 179px;
+                    width: 179px;
             height: 25px;
             left: 749px;
             top: 431px;
