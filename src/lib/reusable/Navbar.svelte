@@ -13,7 +13,6 @@
 		{ name: 'Projects', url: '/projects' },
 		{ name: 'Swap', url: '/swap' },
 		{ name: 'Invoices', url: '/invoices' },
-		// { name: 'Whitepaper', url: '/#whitepaper' }
 	];
     
   
