@@ -1,13 +1,43 @@
 <script>
 // @ts-nocheck
-import { walletAddress, totalStaked, cooldownPeriod, claimPerMonth, totalClaimable, p2p } from "$lib/state/state";
+import { onMount } from "svelte";
+import { ethers, Contract, BrowserProvider } from "ethers";
+import { 
+  walletAddress, 
+  totalStaked, 
+  cooldownPeriod, 
+  claimPerMonth,
+  totalClaimable, 
+  p2p,
+  P2PTokenContractBaseGoerli,
+  P2PStakingContractBaseGoerli,
+  P2PTokenContractMumbai,
+  P2PStakingContractMumbai
+} from "$lib/state/state";
+
+onMount(() => {
+  getP2PBalance()
+})
+import ERC20ABI from '$lib/abi/ERC20.json'
+import P2PTokenABI from '$lib/abi/P2PToken.json'
+import StakingABI from '$lib/abi/P2PToken.json'
 
 
+let P2PBalance
+async function getP2PBalance() {
+  const provider = new BrowserProvider(window.ethereum, "any")
+  const P2P = await new Contract(P2PTokenContractBaseGoerli, P2PTokenABI, provider);
+  P2PBalance = await P2P.balanceOf($walletAddress) / BigInt(10 ** 18)
+  
+}
 
-  let isOpen = false
-  function toggleDrawer() {
-    isOpen = !isOpen
-  }
+
+let isOpen = false
+function toggleDrawer() {
+  isOpen = !isOpen
+}
+
+
 
 </script>
 
@@ -18,7 +48,7 @@ import { walletAddress, totalStaked, cooldownPeriod, claimPerMonth, totalClaimab
           Stake {p2p.title}
         </h2>
         <span class="bg-[#DEFFD8] flex items-center justify-center rounded-[21px] py-1 px-3">
-          <span class="text-skin-green">Buy {p2p.title} with FIAT</span>
+          <span class="text-skin-green hover:scale-[1.05] transition">Buy {p2p.title} with FIAT</span>
         </span>
       </div>
       <hr class="h-[3px] w-full px-3 bg-black opacity-30" />
@@ -45,7 +75,7 @@ import { walletAddress, totalStaked, cooldownPeriod, claimPerMonth, totalClaimab
           <li class="flex gap-10 justify-between mt-3">
             <span class="block text-xs">Wallet Balance</span>
             <span class="block text-xs text-skin-muted ">
-              {p2p.WalletBalance} P2P 
+              {P2PBalance} P2P 
             </span>
           </li>
         </ul>
@@ -56,7 +86,7 @@ import { walletAddress, totalStaked, cooldownPeriod, claimPerMonth, totalClaimab
         </div>
       </div>
 
-      <button on:click={toggleDrawer} />
+
       <div class="basis-[55%] text-center ">
         <div class="flex flex-col gap-2">
           <h2 class="text-lg text-skin-lightDark">Staked {p2p.title}</h2>
