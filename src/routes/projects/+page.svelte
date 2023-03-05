@@ -1,6 +1,17 @@
-<script>
+<script lang="ts">
+      import { page } from '$app/stores'
     //@ts-ignore
     import Navbar from '$lib/reusable/Navbar.svelte'
+
+    interface Pages {
+		name: string,
+		url: string,
+	}
+
+    let menu:Pages[] = [
+		{ name: 'Hospital of Baranquilla', url: '/projectdesc' },
+		
+	];
 </script>
             <Navbar/>
             
@@ -25,7 +36,7 @@
                                     <img class="rounded-2xl" style="width: 568px; height: 183px;" src="../../../../img/solarBaranquilla.jpg" alt=""/>
                                     <div class="relative" style="width: 521px; height: 150px;">
                                         
-                                        <button class="absolute left-0 top-0 text-lg font-bold text-gray-800">Hospital Of Baranquilla</button>
+                                        <button on:click={() => window.location.href = './projectdesc' }><span class="absolute left-0 top-0 text-lg font-bold text-gray-800">Hospital Of Baranquilla</span></button>
                                         
                                         <p class="w-28 h-16 absolute right-0 top-0  text-md font-bold text-gray-500">Baranquilla, Colombia</p>
                                         <div class="inline-flex flex-col space-y-0.5 items-center justify-mid w-24 h-16 relative left-14 -bottom-20">
@@ -61,7 +72,7 @@
                                 <div class="inline-flex flex-col space-y-6 items-end justify-end pl-0.5 pb-3 bg-white shadow rounded-2xl" style="width: 569px; height: 381px;">
                                     <img class="rounded-2xl" style="width: 568px; height: 183px;" src="../../../../img/solarCapeTown.jpg" alt=""/>
                                     <div class="relative" style="width: 526px; height: 160px;">
-                                        <p class="absolute left-0 top-0 text-2xl font-bold text-gray-800">University of Cape Town</p>
+                                        <button on:click={() => window.location.href = './projectdesc2' } class="absolute left-0 top-0 text-2xl font-bold text-gray-800">University of Cape Town</button>
                                         <p class=" w-28 h-16 absolute right-0 top-0  text-md font-bold text-gray-500">Cape Town, South Africa</p>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-22 relative left-14 -bottom-20">
                                             <div class="text-md font-bold  text-gray-500">Project Cost:</div> 
@@ -98,7 +109,7 @@
                                         <img class="rounded-2xl" style="width: 568px; height: 183px;" src="../../../../img/solarBTCTexas.jpg" alt=""/>
                                        
                                         <div class="relative" style="width: 534px; height: 160px;">
-                                        <p class="absolute left-0 top-0 text-2xl font-bold text-gray-800">BTC Mining Texas</p>
+                                        <button on:click={() => window.location.href = './projectdesc3' } class="absolute left-0 top-0 text-2xl font-bold text-gray-800">BTC Mining Texas</button>
                                         <p class=" w-20 h-16 absolute right-4 top-0  text-md font-bold text-gray-500">Houston, USA</p>
                                         <div class="inline-flex flex-col space-y-3 items-center  w-24  h-20 absolute relative left-14 -bottom-20">
                                             <div class="text-md font-bold  text-gray-500">Project Cost:</div> 
@@ -162,12 +173,15 @@
                                 </div>
                    
                                         </div>
+                                        
                                     </div>
+                                    
                                 </div>
-                                <img alt='placeholder' class="w-5 h-5 absolute" style="left: 465px; top: 568px;"  src="../../../../img/p2pcoin.png" />
+                                <img alt='placeholder' class="w-5 h-5 absolute" style="left: 465px; top: 568px;"  src="../../../img/p2pcoin.png" />
                                 <img alt='placeholder' class="w-5 h-5 absolute" style="left: 465px; top: 976px;" src="../../../../img/p2pcoin.png"/>
                                 <img alt='placeholder' class="w-5 h-5 absolute" style="left: 1040px; top: 976px;" src="../../../../img/p2pcoin.png"/>
                                 <img alt='placeholder' class="w-5 h-5 absolute" style="left: 1040px; top: 568px;" src="../../../../img/p2pcoin.png"/>
+
 
                         </div>
                        

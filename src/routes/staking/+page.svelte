@@ -7,6 +7,8 @@
 
 <Navbar></Navbar>
 
-<div class='flex justify-center'>
+<div class='flex justify-center relative bg-gray-100' style="width: 1607px; height: 1040px;">
+     
     <Stake></Stake>
 </div>
+
