@@ -1,8 +1,9 @@
+import type { Network } from 'ethers'
 import { writable } from 'svelte/store'
 
 export const walletAddress = writable<string>('')
-export const connectedNetwork = writable<string>('Base')
-
+export const networkName = writable<string>('Base') // For network component bar
+export const connectedNetwork = writable<Number | bigint | number>()
 export const totalStaked = writable<number>(0)
 export const cooldownPeriod = writable<number>(0)
 export const claimPerMonth = writable<number>(0)
