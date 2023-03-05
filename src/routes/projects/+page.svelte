@@ -15,7 +15,7 @@
   let menu: Pages[] = [
     {
       name: 'Hospital of Baranquilla',
-      url: '/projectdesc',
+      url: '/projects/hospital',
       imgUrl: '/img/solarBaranquilla.jpg',
       location: 'Branquilla, Colombia',
       cost: { dollars: '400,000', p2p: '800,000' },

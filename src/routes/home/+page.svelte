@@ -90,7 +90,10 @@
             <div
               class="w-full gap-20 flex flex-col items-start self-stretch h-[298px]"
             >
-            <img class="absolute -left-80 bottom-40" style="left: 525px; bottom: 22px;"  src="../../../../img/metamask.svg" alt=""/>
+            <img class="absolute -left-80 bottom-40" style="left: 25px; bottom: 10px;"  src="../../../../img/google.png" alt=""/>
+            <div class="absolute -left-80 bottom-40" style="left: 135px; bottom: 18px;">Google</div>
+            <img class="absolute -left-80 bottom-40" style="left: 415px; bottom: 18px;"  src="../../../../img/metamask.svg" alt="Metamask"/>
+            <div class="absolute -left-80 bottom-40" style="left: 500px; bottom: 18px;">Metamask</div>
               <div
                 class="w-full gap-5 flex flex-col items-start self-stretch h-[152px]"
               >
