@@ -130,6 +130,37 @@
       }
     }
   }
+
+  async function withdrawStake(initial:number | string | bigint, reward: number | string | bigint) {
+    // console.log(stake)
+    try {
+      //@ts-ignore
+      const provider = new BrowserProvider(window.ethereum, 'any');
+      const signer = await provider.getSigner();
+      const contract = new ethers.Contract(
+        P2PStakingContractMumbai,
+        StakingABI,
+        signer
+      )
+      console.log(initial, reward)
+      const txWithdraw = await contract.withdrawTest(initial, reward);
+      await txWithdraw.wait();
+    } catch(error) {
+      console.log(error)
+    }
+
+  }
+  async function claimRewards() {
+    //@ts-ignore
+    const provider = new BrowserProvider(window.ethereum, 'any');
+    const signer = await provider.getSigner();
+    const contract = new ethers.Contract(
+      P2PStakingContractMumbai,
+      StakingABI,
+      signer
+    )
+
+  }
   async function getUser(user: string) {
     //@ts-ignore
         
@@ -208,20 +239,20 @@
         <h2 class="text-lg text-skin-lightDark">Staked {p2p.title}</h2>
         <h2 class="text-2xl text-[#666666]">{Number(formatEther(currentP2PStaked)).toLocaleString()} P2P</h2>
         <p class="text-[#333333] text-base">Cooldown Period</p>
-        <h4 class="text-xs text-skin-muted">{$cooldownPeriod}</h4>
-        <button
+        <h4 class="text-xs text-skin-muted">{currentP2PRewards ? 'Lock period ended' : ''}</h4>
+        <button on:click={(e)=>withdrawStake(currentP2PStaked, currentP2PRewards)}
           class="py-2 px-3 rounded-[5px] border border-skin-green text-skin-green hover:scale-[1.05] transition"
         >
-          Cooldown to Unstake
+          Unstake and Claim
         </button>
       </div>
       <hr class="h-[3px] w-full my-6 px-3 bg-black opacity-30" />
       <div class="flex flex-col gap-2">
         <h2 class="text-lg text-skin-lightDark">Claimable {p2p.title}</h2>
         <h2 class="text-2xl text-[#666666]">{Number(formatEther(currentP2PRewards)).toLocaleString()}</h2>
-        <p class="text-[#333333] text-base">{p2p.title} per month</p>
-        <h4 class="text-xs text-skin-muted">{$claimPerMonth}</h4>
-        <button
+        <p class="text-[#333333] text-base">Length of stake</p>
+        <h4 class="text-xs text-skin-muted">{currentP2PRewards ? '21 days' : 'N/A'}</h4>
+        <button on:click={claimRewards}
           class="py-2 px-3 rounded-[5px] border border-skin-green text-skin-green hover:scale-[1.05] transition"
         >
           Claim {p2p.title}
