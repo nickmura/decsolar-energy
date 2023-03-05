@@ -162,12 +162,15 @@
                                 </div>
                    
                                         </div>
+                                        
                                     </div>
+                                    
                                 </div>
-                                <img alt='placeholder' class="w-5 h-5 absolute" style="left: 465px; top: 568px;"  src="../../../../img/p2pcoin.png" />
+                                <img alt='placeholder' class="w-5 h-5 absolute" style="left: 465px; top: 568px;"  src="../../../img/p2pcoin.png" />
                                 <img alt='placeholder' class="w-5 h-5 absolute" style="left: 465px; top: 976px;" src="../../../../img/p2pcoin.png"/>
                                 <img alt='placeholder' class="w-5 h-5 absolute" style="left: 1040px; top: 976px;" src="../../../../img/p2pcoin.png"/>
                                 <img alt='placeholder' class="w-5 h-5 absolute" style="left: 1040px; top: 568px;" src="../../../../img/p2pcoin.png"/>
+
 
                         </div>
                        
