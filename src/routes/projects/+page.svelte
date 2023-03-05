@@ -13,37 +13,7 @@
                              
                                 
                             </div>
-                            <div class="relative absolute left-0 top-0" style="width: 334px; height: 1040px;">
-                                <div class="inline-flex flex-col space-y-16 items-start justify-center w-80 h-40 pl-7 pr-6 pb-16 absolute bg-green-700" style="left: 0px; top: 309px;">
-                                    <div class="inline-flex space-x-6 items-center justify-end w-32 h-1/3">
-                                        <div class="w-1/6 h-6 bg-white rounded-lg"/>
-                                        <p class="text-xl text-white">Projects</p>
-                                    </div>
-                                </div>
-                                <div class="inline-flex flex-col space-y-28 items-start justify-end w-80 px-9 pt-7 pb-16 bg-white shadow rounded-lg">
-                                   
-                                    <div class="inline-flex space-x-6 items-center justify-end w-32 h-8">
-                                        <div class="w-5 h-5/6 bg-gray-500 rounded-lg"/>
-                                        <p class="text-xl text-gray-500">Staking</p>
-                                    </div>
-                                    <div class="inline-flex space-x-6 items-center justify-end w-1/2 h-8">
-                                        <div class="w-1/6 h-5 bg-gray-500 rounded-lg"/>
-                                        <p class="text-xl text-gray-500">Buy/Sell</p>
-                                    </div>
-                                    <div class="inline-flex space-x-6 items-center justify-end w-44 h-8">
-                                        <div class="w-6 h-6 bg-gray-500 rounded-lg"/>
-                                        <p class="text-xl text-gray-500">Liquidity Pool </p>
-                                    </div>
-                                    <div class="inline-flex space-x-6 items-center justify-end w-28 h-8">
-                                        <div class="w-5 h-5 bg-gray-500 rounded-lg"/>
-                                        <p class="text-xl text-gray-500">Pay Bill</p>
-                                    </div>
-                                    <div class="inline-flex space-x-6 items-center justify-end w-32 h-8">
-                                        <div class="w-7 h-6 bg-green-700 rounded-lg"/>
-                                        <p class="text-xl text-green-700">Log Out</p>
-                                    </div>
-                                </div>
-                            </div>
+                           
                             <p class="absolute text-4xl font-bold text-gray-800" style="left: 394px; top: 44px;">Projects</p>
                             <p class="absolute text-xl font-bold text-gray-500" style="left: 394px; top: 129px;">All</p>
                             <p class="absolute text-xl font-bold text-green-700" style="left: 561px; top: 129px;">Available</p>
@@ -51,10 +21,11 @@
                             <div class="absolute" style="width: 569px; height: 381px; left: 394px; top: 218px;">
                                 
                                 <div class="inline-flex flex-col space-y-6 items-end justify-center pl-0.5 pb-3 bg-white shadow rounded-2xl" style="width: 569px; height: 381px;">
+                                    
                                     <img class="rounded-2xl" style="width: 568px; height: 183px;" src="../../../../img/solarBaranquilla.jpg" alt=""/>
                                     <div class="relative" style="width: 521px; height: 150px;">
                                         
-                                        <p class="absolute left-0 top-0 text-lg font-bold text-gray-800">Hospital Of Baranquilla</p>
+                                        <button class="absolute left-0 top-0 text-lg font-bold text-gray-800">Hospital Of Baranquilla</button>
                                         
                                         <p class="w-28 h-16 absolute right-0 top-0  text-md font-bold text-gray-500">Baranquilla, Colombia</p>
                                         <div class="inline-flex flex-col space-y-0.5 items-center justify-mid w-24 h-16 relative left-14 -bottom-20">
