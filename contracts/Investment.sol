@@ -161,6 +161,5 @@ contract InvestmentFund {
         withdrawn[msg.sender] += payout;
         token.transfer(user, payout);
 
-        // What are the terms for paying out
     }
 }

@@ -22,7 +22,7 @@ export const P2PTokenContractBaseGoerli = '0xcebd8b951D1cEF1A3Acb45156A5b11B6DDE
 export const P2PStakingContractBaseGoerli = '0xF31541d828f7Fc15426A9e7E3Ea498271fF43C70';
 
 export const P2PTokenContractMumbai= '0xe2480E14F357df9d3D526f68A97006A5fc93414C';
-export const P2PStakingContractMumbai = '0xE9e4A48d7076cD8F694c260fe37b9E3a56Fa61e4';
+export const P2PStakingContractMumbai = '0x2D4dB3F34BeeE8B5BF884B165B7C58f1617Cb119';
 
 
 
