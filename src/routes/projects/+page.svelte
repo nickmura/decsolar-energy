@@ -1,5 +1,5 @@
 <script lang="ts">
-  import ProjectCard from '$lib/reusable/ProjectCard.svelte';
+  import ProjectCard from './ProjectCard.svelte';
 
   interface Pages {
     name: string;
@@ -13,10 +13,11 @@
 
 <div class="max-w-[1600px] w-max gap-4 flex flex-col">
   <h1 class="text-4xl font-semibold">Projects</h1>
-  <div class="text-xl border-b-gray-300 px-4">
-    <button>All</button>
-    <button>Available</button>
-    <button>Completed</button>
+  <div class="text-xl text-secondaryText font-semibold flex w-full mb-4">
+    <button class="px-8 border-b-2 border-gray-300 pb-4">All</button>
+    <button class="px-8 border-b-2 border-brandGreen pb-4">Available</button>
+    <button class="px-8 border-b-2 border-gray-300 pb-4">Completed</button>
+    <div class="w-full border-b-2 border-gray-300 pb-4" />
   </div>
   <div class="flex items-center justify-center flex-wrap gap-8 w-full">
     <ProjectCard />

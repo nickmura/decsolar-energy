@@ -18,9 +18,13 @@
     <div class="w-full flex justify-between">
       <div>
         <h3 class="font-semibold">Project Cost</h3>
-        <span class="block text-brandGreen font-semibold break-words w-28"
-          >$400,000 or 800,000 P2P</span
-        >
+        <span class="block text-brandGreen font-semibold break-words w-32"
+          >$400,000 or 800,000 <img
+            src="/img/p2pcoin.png"
+            alt=""
+            class="w-6 inline-block"
+          />
+        </span>
       </div>
       <div>
         <h3 class="font-semibold">APR</h3>
