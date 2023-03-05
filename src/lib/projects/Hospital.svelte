@@ -10,7 +10,7 @@
     import InvestingABI from '$lib/abi/Investment.json';
     import P2PTokenABI from '$lib/abi/P2PToken.json';
 
-    
+    let investment:BigNumberish
     let fundingGoal:BigNumberish
     let currentFunding:BigNumberish
     let progressFunding:BigNumberish
@@ -53,6 +53,36 @@
         }
 
     } setTimeout(fundingProgress, 400);
+
+    async function contribute(stake:BigInt) {
+      console.log(stake)
+      if ($connectedNetwork == 80001) {
+          console.log(800001)
+          //@ts-ignore
+          const provider = new BrowserProvider(window.ethereum, 'any');
+          const signer = await provider.getSigner();
+          const contract = new ethers.Contract(
+          P2PInvestingContractMumbai,
+          InvestingABI,
+          signer);
+          let contribute = await contract.contribute(stake);
+
+          console.log(contribute);
+        } else if ($connectedNetwork == 85341){
+
+          //@ts-ignore
+          const provider = new BrowserProvider(window.ethereum, 'any');
+          const signer = await provider.getSigner();
+          const contract = new ethers.Contract(
+          P2PInvestingContractBaseGoerli,
+          InvestingABI,
+          signer);
+          let contribute = await contract.contribute(stake);
+
+          console.log(contribute);
+          
+        }
+    }
   </script>
   
   
@@ -162,8 +192,11 @@
           <p>First Estimated Profitability:</p>
           <span class="font-semibold text-brandGreen">`15/09/23</span>
         </div>
-        <button class="p-4 rounded-lg bg-brandGreen text-white w-36"
-          >Participate</button
+        <input type='range' min='0' max={250000} bind:value={investment}>
+        <div class=''>Invest: {investment ? investment.toLocaleString() : ''} P2P</div>
+        <div class=''>Receive: {investment ?  (100 * ( Number(investment) / Number(fundingGoal))).toFixed(2) : ''}% equity</div>
+        <button on:click={(e)=>contribute(BigInt(Number(investment) * (10 ** 18)))} class="p-4 rounded-lg bg-brandGreen text-white w-36"
+          >Invest</button
         >
       </div>
       <div
@@ -180,7 +213,7 @@
           </div>
           <div>
             <h3 class="font-semibold">Total Invested</h3>
-            <span class="text-brandGreen font-semibold">$100,000</span>
+            <span class="text-brandGreen font-semibold">{currentFunding ? currentFunding.toLocaleString() : '0'} P2P</span>
           </div>
           <div>
             <h3 class="font-semibold">APR</h3>

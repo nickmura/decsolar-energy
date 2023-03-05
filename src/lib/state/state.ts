@@ -24,7 +24,7 @@ export const P2PInvestingContractBaseGoerli = '0x5742712745D4f95b7ADd54B95C37a04
 
 export const P2PTokenContractMumbai = '0xDD8Bf6F0F52Ec51786457E50D33dBb664fef9430';
 export const P2PStakingContractMumbai = '0x2D4dB3F34BeeE8B5BF884B165B7C58f1617Cb119';
-export const P2PInvestingContractMumbai = '0xe5daBfE3B113495e2f27F400Aa968c4a0929C53e';
+export const P2PInvestingContractMumbai = '0x5DDaA32df163CFa211Ced91912FCF2cA51D2F67D';
 
 
 

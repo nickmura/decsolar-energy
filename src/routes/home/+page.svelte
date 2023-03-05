@@ -1,12 +1,12 @@
 
 
 <script>
- 
+  import { goto } from '$app/navigation'
   import Wallet from '$lib/reusable/Wallet.svelte'
 
-
+  goto('/staking')
 </script>
-    <div
+    <!-- <div
       class={`relative text-white text-left w-[1755px] h-[1075px] bg-[rgba(20,22,39,1)] overflow-clip font-['Poppins']`}
      >
     
@@ -191,7 +191,7 @@
 
          />
          
-      </div>
+      </div> -->
       
   
       
