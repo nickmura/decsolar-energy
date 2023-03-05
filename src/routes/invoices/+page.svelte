@@ -1,82 +1,41 @@
-<div
-  class="flex justify-center relative bg-gray-100"
-  style="width: 1607px; height: 1040px;"
-/>
-<p
-  class="absolute left-80 top-40 text-4xl font-bold text-gray-800"
-  style="width: 900.91px; height: 62.65px;"
->
-  Pay Bill
-</p>
-<div
-  class="absolute"
-  style="width: 876px; height: 702px; left: 402px; top: 299px;"
->
-  <div
-    class="flex items-end justify-start pl-6 pr-16 pt-56 pb-36 bg-white shadow rounded-2xl"
-    style="width: 876px; height: 702px;"
-  >
-    <div class="relative" style="width: 783px; height: 322.65px;">
-      <p
-        class="absolute left-0 top-0 text-2xl font-bold text-gray-800"
-        style="width: 424.91px; height: 62.65px;"
-      >
-        Hospital Of Baranquilla
-      </p>
-      <p
-        class="absolute left-0 bottom-40 text-2xl font-bold text-gray-800"
-        style="width: 424.91px; height: 62.65px;"
-      >
-        Total Usage Kwh
-      </p>
-      <p class="w-72 h-12 absolute right-0 top-0 text-lg text-gray-500">
-        Baranquilla, Colombia
-      </p>
-      <p class="w-72 h-12 absolute right-0 bottom-40 text-2xl text-gray-500">
-        20,000 Kwh
-      </p>
-      <p
-        class="absolute left-0 top-40 text-2xl font-bold text-gray-800"
-        style="width: 424.91px; height: 62.65px;"
-      >
-        Cost per 1 Kwh
-      </p>
-      <p class="w-72 h-1 absolute right-0 bottom-40 text-2xl text-gray-500">
-        $ .17 cents/Kwh
-      </p>
-      <p
-        class="absolute left-0 bottom-0 text-2xl font-bold text-gray-800"
-        style="width: 424.91px; height: 62.65px;"
-      >
-        Total Cost Electricity Bill
-      </p>
-      <p class="w-72 h-16 absolute right-0 bottom-0 text-2xl text-gray-500">
-        $ 3400 USD
-      </p>
+<div class="max-w-[1600px] w-max gap-4 flex flex-col">
+  <h1 class="text-4xl font-semibold">Pay Bill</h1>
+  <div class="flex items-center justify-center flex-wrap gap-8 w-full">
+    <div class="w-[46rem] bg-white rounded-xl shadow cursor-pointer">
+      <img
+        src="/img/solarBaranquilla.jpg"
+        alt=""
+        class="shadow h-64 w-full object-center object-cover rounded-xl scale-[1.01]"
+      />
+      <div class="w-full flex flex-col gap-6 p-4">
+        <div class="flex w-full items-center justify-between">
+          <h2 class="font-semibold text-xl">Hospital Of Baranquilla</h2>
+          <p class="text-secondaryText">Baranquilla, Colombia</p>
+        </div>
+        <div class="flex flex-col gap-6">
+          <div class="w-full flex justify-between">
+            <p class="font-semibold">Total Usage Kwh</p>
+            <span class="font-light">20,000 Kwh</span>
+          </div>
+          <div class="w-full flex justify-between">
+            <p class="font-semibold">Cost per 1 kwh</p>
+            <span class="font-light">$0.17</span>
+          </div>
+          <div class="h-1 w-full bg-gray-200" />
+          <div class="w-full flex justify-between">
+            <p class="font-semibold">Total Elecricity Bill Cost</p>
+            <span class="font-light">$3400 USD</span>
+          </div>
+        </div>
+        <div class="w-full flex justify-around">
+          <button class="p-4 rounded-lg bg-brandGreen text-white w-36"
+            >Pay in P2P</button
+          >
+          <button class="p-4 rounded-lg bg-brandGreen text-white w-36"
+            >Pay in USD</button
+          >
+        </div>
+      </div>
     </div>
   </div>
 </div>
-<button class="w-60 h-12 absolute" style="left: 463px; top: 897px;">
-  <div
-    class="flex items-center justify-center flex-1 h-full py-3 px-16 bg-green-700 border rounded-lg border-green-700"
-  >
-    <p class="text-sm font-medium leading-relaxed text-right text-white">
-      Pay in P2P
-    </p>
-  </div>
-</button>
-<button class="w-60 h-12 absolute" style="left: 922px; top: 897px;">
-  <div
-    class="flex items-center justify-center flex-1 h-full py-3 px-16 bg-green-700 border rounded-lg border-green-700"
-  >
-    <p class="text-sm font-medium leading-relaxed text-right text-white">
-      Pay in USD
-    </p>
-  </div>
-</button>
-<img
-  class="absolute rounded-2xl"
-  style="width: 876px; height: 203px; left: 402px; top: 300px;"
-  src="../../../../img/solarBaranquilla.jpg"
-  alt=""
-/>
