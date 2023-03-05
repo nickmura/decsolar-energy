@@ -46,6 +46,7 @@
   walletAddress.subscribe((address) => {
     if (address && window.ethereum) {
       if (!updater.provider) {
+        updater.callback();
         updater.provider = new BrowserProvider(window.ethereum, 'any');
         updater.provider.on('block', updater.callback);
       } else {
