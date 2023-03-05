@@ -53,15 +53,9 @@ contract InvestmentFund {
 
         currentFunding += amount;
         balances[msg.sender] += amount;
-<<<<<<< HEAD
-        equity[msg.sender] = (balances[msg.sender] / fundingGoal) * 100; // Percent of your equity (100k of 500k is 20% equity)
-        token.transferFrom(msg.sender, address(this), amount);
-        
-=======
         equity[msg.sender] = (balances[msg.sender] * 1e18) / fundingGoal;
 
         token.transferFrom(msg.sender, address(this), amount);
->>>>>>> 2a1222c17374c508416506c89e544377b5b5d400
         emit NewInvestment(msg.sender, amount);
     }
 
@@ -74,26 +68,6 @@ contract InvestmentFund {
         _currentFunding = currentFunding;
     }
 
-<<<<<<< HEAD
-    function withdraw(uint256 amount) public { // TODO: change this into trade 
-        require(!hasEnded, "Project has undergone building infrastructure, cannot withdraw funds");
-        require(amount > 0 && amount <= balances[msg.sender], "Invalid withdrawal amount.");
-
-
-        balances[msg.sender] -= amount;
-        equity[msg.sender] = ((balances[msg.sender] * 1e18) / fundingGoal);
-        // Subtract the investor's balance from the total amount raised
-        currentFunding -= amount;
-        token.transferFrom(msg.sender, address(this), amount);
-        emit WithdrawedInvestment(msg.sender, amount);
-
-    }
-
-    function endContributionPeriod() public {
-        require(msg.sender == tenant, "msg.sender is not tenant");
-        require(fundingGoal >= currentFunding, "The desired amount has not been reached.");
-
-=======
     function withdraw(uint256 amount) public {
         // TODO: change this into trade
         require(
@@ -116,7 +90,6 @@ contract InvestmentFund {
             fundingGoal >= currentFunding,
             "The desired amount has not been reached."
         );
->>>>>>> 2a1222c17374c508416506c89e544377b5b5d400
         hasEnded = true;
         token.transfer(safe, token.balanceOf(address(this)));
     }
@@ -187,13 +160,6 @@ contract InvestmentFund {
             withdrawn[msg.sender];
         withdrawn[msg.sender] += payout;
         token.transfer(user, payout);
-<<<<<<< HEAD
-        token.transfer(safe, fee);
-        // What are the terms for paying out 
-        
-=======
 
-        // What are the terms for paying out
->>>>>>> 2a1222c17374c508416506c89e544377b5b5d400
     }
 }
