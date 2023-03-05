@@ -123,13 +123,14 @@ async function stakeP2P(stake:number | string | bigint) {
   }
   async function getUser(user:string) {
     //@ts-ignore
+        
         const provider = new BrowserProvider(window.ethereum, "any")
         const signer = await provider.getSigner()
         const contract = new ethers.Contract(P2PStakingContractMumbai, StakingABI, signer)
 
         const txGetUser = await contract.getUserTest(user);
         console.log(formatEther(txGetUser.balance), formatEther(txGetUser.reward));
-        
+
   }   
 
 </script>
