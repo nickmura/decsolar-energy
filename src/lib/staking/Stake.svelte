@@ -129,6 +129,7 @@
   }
   async function getUser(user: string) {
     //@ts-ignore
+        
     const provider = new BrowserProvider(window.ethereum, 'any');
     const signer = await provider.getSigner();
     const contract = new ethers.Contract(
@@ -137,9 +138,11 @@
       signer
     );
 
-    const txGetUser = await contract.getUserTest(user);
-    console.log(formatEther(txGetUser.balance), formatEther(txGetUser.reward));
-  }
+        const txGetUser = await contract.getUserTest(user);
+        console.log(formatEther(txGetUser.balance), formatEther(txGetUser.reward));
+        
+  }   
+
 </script>
 
 <div class="bg-white w-[600px] z-50 px-5 shadow-lg rounded-[6px]">
