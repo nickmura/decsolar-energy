@@ -168,7 +168,7 @@
             
               </div>
               <img class="relative -left-80 top-20" style="left: -500px; top: 500px; width: 2000px; height: 400px;"  src="../../../../img/solarcar.png" alt=""/>
-              <img class="relative -left-80 top-20" style="left: -200px; top: -1px;"  src="../../../../img/metamask.svg" alt=""/>
+
             </div>
           </div>
         </div>
