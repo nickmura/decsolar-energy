@@ -106,7 +106,7 @@
           </div>
           <div>
             <h3 class="font-semibold"># of Investors</h3>
-            <span class="text-brandGreen font-semibold">157</span>
+            <span class="text-brandGreen font-semibold">{currentFunding ? 1 : 0}</span>
           </div>
         </div>
         <h2 class="text-xl">Description</h2>

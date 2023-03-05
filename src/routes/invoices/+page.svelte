@@ -1,3 +1,49 @@
+<script lang='ts'>
+
+    import { onMount } from 'svelte';
+    import { ethers, BrowserProvider, formatEther, formatUnits, type BigNumberish } from 'ethers';
+    import { P2PInvestingContractBaseGoerli, P2PInvestingContractMumbai, P2PTokenContractBaseGoerli } from '$lib/state/state';
+    import { connectedNetwork } from '$lib/state/state';
+    // @ts-ignore
+    import InvestingABI from '$lib/abi/Investment.json';
+    import P2PTokenABI from '$lib/abi/P2PToken.json';
+
+    async function viewBill() {
+        
+        if ($connectedNetwork == 80001) {
+          console.log(800001)
+          //@ts-ignore
+          const provider = new BrowserProvider(window.ethereum, 'any');
+          const signer = await provider.getSigner();
+          const contract = new ethers.Contract(
+          P2PInvestingContractMumbai,
+          InvestingABI,
+          signer);
+          let viewBill = await contract.viewBill();
+          // fundingGoal = formatEther(BigInt(viewBill[0]));
+          // viewBill = formatEther(BigInt(viewBill[1]))
+          // progressFunding = (Number(viewBill) / Number(fundingGoal)) * 100
+          console.log(viewBill);
+        } else if ($connectedNetwork == 85341){
+
+          //@ts-ignore
+          const provider = new BrowserProvider(window.ethereum, 'any');
+          const signer = await provider.getSigner();
+          const contract = new ethers.Contract(
+          P2PInvestingContractBaseGoerli,
+          InvestingABI,
+          signer);
+          let viewBill = await contract.viewBill();
+          // fundingGoal = formatEther(BigInt(viewBill[0]));
+          // viewBill = formatEther(BigInt(viewBill[1]))
+          // progressFunding = (Number(viewBill) / Number(fundingGoal)) * 100
+          console.log(viewBill);
+          
+        }
+
+    } setTimeout(viewBill, 400);
+</script>
+
 <div class="max-w-[1600px] w-max gap-4 flex flex-col">
   <h1 class="text-4xl font-semibold">Pay Bill</h1>
   <div class="flex items-center justify-center flex-wrap gap-8 w-full">
