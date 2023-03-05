@@ -27,11 +27,11 @@ import Navbar from '$lib/reusable/Navbar.svelte'
                 </div>
                 <div class="inline-flex flex-col space-y-0 items-center justify-end w-26 h-full">
                     <p class="text-gray-800">CO2  Avoided</p>
-                    <p class="text-sm font-semibold text-green-700">23.987 ton</p>
+                    <p class="text-sm font-semibold text-green-700">35.394 ton</p>
                 </div>
                 <div class="inline-flex flex-col space-y-0 items-end justify-end w-26 h-full">
                     <p class="text-base text-gray-800">Trees Saved</p>
-                    <p class="text-sm font-semibold text-green-700">344.118</p>
+                    <p class="text-sm font-semibold text-green-700">250.563</p>
                 </div>
                 <div class="inline-flex flex-col space-y-0 items-center justify-end w-26 h-full">
                     <p class="text-base text-gray-800">Contract</p>
@@ -39,11 +39,11 @@ import Navbar from '$lib/reusable/Navbar.svelte'
                 </div>
                 <div class="inline-flex flex-col space-y-0 items-center justify-end w-1/6 h-full">
                     <p class="text-base text-gray-800">Output</p>
-                    <p class="text-sm font-semibold text-green-700">1.380 KWP</p>
+                    <p class="text-sm font-semibold text-green-700">980 KWP</p>
                 </div>
                 <div class="inline-flex flex-col items-center justify-end w-28 h-12">
                     <p class="text-base text-gray-800"># of Investors</p>
-                    <p class="text-lg font-semibold text-green-700">157</p>
+                    <p class="text-lg font-semibold text-green-700">432</p>
                 </div>
             </div>
             <p class="text-xl font-extralight text-gray-800">Description:</p>
@@ -66,7 +66,7 @@ import Navbar from '$lib/reusable/Navbar.svelte'
             </div>
             <div class="inline-flex flex-col space-y-1 items-center justify-end w-12 h-12">
                 <p class="text-base text-gray-800">APR</p>
-                <p class="text-lg font-semibold text-green-700">14.7%</p>
+                <p class="text-lg font-semibold text-green-700">15.2%</p>
             </div>
         </div>
         <p class="text-base font-medium leading-normal text-gray-800">Projected Earnings </p>
@@ -122,19 +122,19 @@ import Navbar from '$lib/reusable/Navbar.svelte'
                 </div>
                 <div class="inline-flex flex-col space-y-1 items-center justify-end w-12 h-full">
                     <p class="text-base font-bold text-gray-500">APR</p>
-                    <p class="text-lg font-semibold text-green-700">12.2%</p>
+                    <p class="text-lg font-semibold text-green-700">15.2%</p>
                 </div>
                 <div class="inline-flex flex-col space-y-1 items-center justify-end w-1/5 h-full">
                     <p class="text-base font-bold text-gray-500">Net Profit</p>
-                    <p class="text-lg font-semibold text-green-700">14.7%</p>
+                    <p class="text-lg font-semibold text-green-700">18.7%</p>
                 </div>
             </div>
             <div class="flex flex-col space-y-1 items-center justify-end" style="width: 435px; height: 80px;">
                 <p class="text-lg font-bold text-gray-800">Contribution Progress </p>
-                <p class="text-base font-semibold leading-normal text-center text-gray-500" style="width: 435px;">Cost of The Project               <div> $500,000 USD</div> 
+                <p class="text-base font-semibold leading-normal text-center text-gray-500" style="width: 435px;">Cost of The Project               <div> $400,000 USD</div> 
             </div>
             <div class="flex flex-col space-y-1 items-center justify-center w-90 h-10">
-                <p class="text-lg font-extrabold text-green-700 relative -right-20">14.7%  Financed</p>
+                <p class="text-lg font-extrabold text-green-700 relative -right-20">30.2%  Financed</p>
             </div>
             <div class="relative" style="width: 404px; height: 136px;">
                 <p class="relative left-20 bottom-30 text-lg font-extralight text-gray-800">Project Road Map</p>
@@ -154,16 +154,16 @@ import Navbar from '$lib/reusable/Navbar.svelte'
     </div>
     <div class="inline-flex flex-col space-y-1 items-center justify-start px-5 pt-4 pb-5 absolute bg-white shadow rounded-2xl" style="width: 478px; height: 501px; left: 1153px; top: 731px;">
         <p class="text-lg font-bold text-gray-800">Estimate Your Profits </p>
-        <p class="text-lg font-extralight text-gray-800">400,206</p>
-        <p class="text-lg font-extralight text-green-700">$200,103</p>
-        <p class="w-9 text-lg font-bold text-green-700">P2P</p>
+        <p class="text-lg font-extralight text-gray-800">250,206</p>
+        <p class="text-lg font-extralight text-green-700">$150,103</p>
+        <p class="w-9 text-lg font-bold text-green-700"></p>
       
        
         <div class="relative" style="width: 438px; height: 138px;">
 
             <p class="absolute right-0 bottom-0 text-lg font-extralight text-gray-800">At the end of the project you will have obtained approx:</p>
 
-            <p class="absolute right-0 bottom-0 text-lg font-semibold text-right text-green-700">$938,613.18</p>
+            <p class="absolute right-0 bottom-0 text-lg font-semibold text-right text-green-700">$632,547.18</p>
 
         </div>
         <div class="w-1/2 h-12">

@@ -72,7 +72,7 @@
                                 <div class="inline-flex flex-col space-y-6 items-end justify-end pl-0.5 pb-3 bg-white shadow rounded-2xl" style="width: 569px; height: 381px;">
                                     <img class="rounded-2xl" style="width: 568px; height: 183px;" src="../../../../img/solarCapeTown.jpg" alt=""/>
                                     <div class="relative" style="width: 526px; height: 160px;">
-                                        <p class="absolute left-0 top-0 text-2xl font-bold text-gray-800">University of Cape Town</p>
+                                        <button on:click={() => window.location.href = './projectdesc2' } class="absolute left-0 top-0 text-2xl font-bold text-gray-800">University of Cape Town</button>
                                         <p class=" w-28 h-16 absolute right-0 top-0  text-md font-bold text-gray-500">Cape Town, South Africa</p>
                                         <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-22 relative left-14 -bottom-20">
                                             <div class="text-md font-bold  text-gray-500">Project Cost:</div> 
@@ -109,7 +109,7 @@
                                         <img class="rounded-2xl" style="width: 568px; height: 183px;" src="../../../../img/solarBTCTexas.jpg" alt=""/>
                                        
                                         <div class="relative" style="width: 534px; height: 160px;">
-                                        <p class="absolute left-0 top-0 text-2xl font-bold text-gray-800">BTC Mining Texas</p>
+                                        <button on:click={() => window.location.href = './projectdesc3' } class="absolute left-0 top-0 text-2xl font-bold text-gray-800">BTC Mining Texas</button>
                                         <p class=" w-20 h-16 absolute right-4 top-0  text-md font-bold text-gray-500">Houston, USA</p>
                                         <div class="inline-flex flex-col space-y-3 items-center  w-24  h-20 absolute relative left-14 -bottom-20">
                                             <div class="text-md font-bold  text-gray-500">Project Cost:</div> 

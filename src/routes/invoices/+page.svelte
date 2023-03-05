@@ -9,7 +9,7 @@
 
     
     <div class='flex justify-center relative bg-gray-100' style="width: 1607px; height: 1040px;"></div>
-    <p class="fixed left-80 top-40 text-4xl font-bold text-gray-800" style="width: 900.91px; height: 62.65px;">Pay Bill</p>
+    <p class="absolute left-80 top-40 text-4xl font-bold text-gray-800" style="width: 900.91px; height: 62.65px;">Pay Bill</p>
     <div class="absolute" style="width: 876px; height: 702px; left: 402px; top: 299px;">
         <div class="flex items-end justify-start pl-6 pr-16 pt-56 pb-36 bg-white shadow rounded-2xl" style="width: 876px; height: 702px;">
             <div class="relative" style="width: 783px; height: 322.65px;">
