@@ -2,24 +2,16 @@
 
 /* Set up the modal overlay */
 
-
 .no-spinner {
-    -moz-appearance: textfield;
-  }
+  -moz-appearance: textfield;
+}
 
-  .no-spinner::-webkit-outer-spin-button,
-  .no-spinner::-webkit-inner-spin-button {
-    margin: 0;
-    -webkit-appearance: none;
-  }
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-
-@layer base {
-    /* body {
-        font-family: sans-serif;
-    } */
-}

@@ -1,11 +1,7 @@
 <script>
-    // @ts-ignore
-    import Navbar from '$lib/reusable/Navbar.svelte'
-    import Stake from '$lib/staking/Stake.svelte'
+  import Stake from '$lib/staking/Stake.svelte';
 </script>
 
-
-<Navbar></Navbar>
-<div class='flex justify-center'>
-    <Stake></Stake>
+<div class="flex justify-center bg-green-300 w-min h-min">
+  <Stake />
 </div>

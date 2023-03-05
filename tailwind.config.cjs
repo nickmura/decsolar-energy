@@ -8,6 +8,10 @@ module.exports = {
       //   '4/3': '4 / 3',
       // },
       colors: {
+        primaryText: '#333',
+        secondaryText: '#666',
+        brandGreen: '#31ae1a',
+
         skin: {
           dark: 'var(--color-bg-dark)',
           white: 'var(--color-white)',
@@ -105,7 +109,6 @@ module.exports = {
       },
     },
   },
-  
+
   plugins: [],
-  
 };
