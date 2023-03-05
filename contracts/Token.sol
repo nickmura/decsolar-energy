@@ -23,10 +23,10 @@
 
         }
 
-            function mint(address to, uint256 amount) public {
-                require(hasRole(MINTER_ROLE, msg.sender), "Caller is not a minter");
-                _mint(to, amount);
-            }
+        function mint(address to, uint256 amount) public {
+            require(hasRole(MINTER_ROLE, msg.sender), "Caller is not a minter");
+            _mint(to, amount);
+        }
 
 
     }

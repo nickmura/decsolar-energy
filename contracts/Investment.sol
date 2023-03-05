@@ -47,8 +47,9 @@ contract InvestmentFund {
         token.transferFrom(msg.sender, address(this), amount);
         currentFunding += amount;
         balances[msg.sender] += amount;
-        equity[msg.sender] = (balances[msg.sender] / fundingGoal) * 100;
-
+        equity[msg.sender] = (balances[msg.sender] / fundingGoal) * 100; // Percent of your equity (100k of 500k is 20% equity)
+        token.transferFrom(msg.sender, address(this), amount);
+        
         emit NewInvestment(msg.sender, amount);
     }
 
@@ -62,12 +63,13 @@ contract InvestmentFund {
         require(!hasEnded, "Project has undergone building infrastructure, cannot withdraw funds");
         require(amount > 0 && amount <= balances[msg.sender], "Invalid withdrawal amount.");
 
-        token.transferFrom(msg.sender, address(this), amount);
 
         balances[msg.sender] -= amount;
-        equity[msg.sender] = (balances[msg.sender] / fundingGoal) * 100;
+        equity[msg.sender] = ((balances[msg.sender] * 1e18) / fundingGoal);
         // Subtract the investor's balance from the total amount raised
         currentFunding -= amount;
+        token.transferFrom(msg.sender, address(this), amount);
+        emit WithdrawedInvestment(msg.sender, amount);
 
     }
 
@@ -75,10 +77,6 @@ contract InvestmentFund {
         require(msg.sender == tenant, "msg.sender is not tenant");
         require(fundingGoal >= currentFunding, "The desired amount has not been reached.");
 
-        // Define the investment strategy and calculate returns
-        // token.transfer(msg.sender, currentFunding);
-        // Distribute the returns to the investors
-    
         hasEnded = true;
     }
 
@@ -116,7 +114,7 @@ contract InvestmentFund {
         require(balances[msg.sender] > 0 && equity[msg.sender] > 0 && user == msg.sender, "Caller has not invested in this project");
         uint256 payout = ((equity[msg.sender] * currentBill) / 10) * 9;
         token.transfer(user, payout);
-
+        token.transfer(safe, fee);
         // What are the terms for paying out 
         
     }
