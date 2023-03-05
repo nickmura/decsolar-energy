@@ -15,21 +15,21 @@
             // @ts-ignore
             if (typeof window != "undefined" && typeof window.ethereum != "undefined" && window.ethereum) {
 
-            try {
-                /* MetaMask is installed */
-                //@ts-ignore
-                const provider = new BrowserProvider(window.ethereum, "any")
-                const accounts = await provider.send("eth_requestAccounts", [])
-                const network = await provider.getNetwork();
-                walletAddress.set(accounts[0])
-                if (network.chainId !== BigInt(84531)) { // if network Base
-                await provider.send('wallet_switchEthereumChain', [{ chainId: `0x${baseChainID.toString(16)}` }])
-            }
+                try {
+                    /* MetaMask is installed */
+                    //@ts-ignore
+                    const provider = new BrowserProvider(window.ethereum, "any")
+                    const accounts = await provider.send("eth_requestAccounts", [])
+                    const network = await provider.getNetwork();
+                    walletAddress.set(accounts[0])
+                    if (network.chainId !== BigInt(84531)) { // if network Base
+                    await provider.send('wallet_switchEthereumChain', [{ chainId: `0x${baseChainID.toString(16)}` }])
+                }
 
-            } catch (err) {
-                if (err instanceof Error)
-                console.error(err.message);
-            }
+                } catch (err) {
+                    if (err instanceof Error)
+                    console.error(err.message);
+                }
 
             
             } else {

@@ -1,6 +1,6 @@
 <script lang="ts">
   import ProjectCard from './ProjectCard.svelte';
-
+  import { ethers, BrowserProvider, formatEther, formatUnits } from 'ethers'
   interface Pages {
     name: string;
     url: string;
@@ -104,6 +104,11 @@
       completed: '30.2%',
     },
   ];
+  
+
+  async function fundingProgress() {
+
+  }
 </script>
 
 <div class="max-w-[1600px] w-max gap-4 flex flex-col">

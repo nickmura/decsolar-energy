@@ -20,9 +20,11 @@ export const P2PTokenHolder = '0xf13c1929d8EF80FFD1eE6f72BD18CfCb1F4eea74';
 
 export const P2PTokenContractBaseGoerli = '0xcebd8b951D1cEF1A3Acb45156A5b11B6DDE4D549';
 export const P2PStakingContractBaseGoerli = '0xF31541d828f7Fc15426A9e7E3Ea498271fF43C70';
-export const P2PInvestingContractBaseGoerli = '0x3f22BcDa8235d75b518f5334F1522Bac2B4643b6'
-export const P2PTokenContractMumbai= '0xe2480E14F357df9d3D526f68A97006A5fc93414C';
+export const P2PInvestingContractBaseGoerli = '0x5742712745D4f95b7ADd54B95C37a0461b788e3a';
+
+export const P2PTokenContractMumbai = '0xDD8Bf6F0F52Ec51786457E50D33dBb664fef9430';
 export const P2PStakingContractMumbai = '0x2D4dB3F34BeeE8B5BF884B165B7C58f1617Cb119';
+export const P2PInvestingContractMumbai = '0xe5daBfE3B113495e2f27F400Aa968c4a0929C53e';
 
 
 

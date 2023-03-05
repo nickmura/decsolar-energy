@@ -29,7 +29,7 @@
     <progress
       class="w-full rounded-xl bg-gray-300 text-brandGreen"
       max="100"
-      min="0"
+      min=0
       value="30"
     />
     <div class="w-full flex justify-between">
