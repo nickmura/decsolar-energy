@@ -1,6 +1,17 @@
-<script>
+<script lang="ts">
+      import { page } from '$app/stores'
     //@ts-ignore
     import Navbar from '$lib/reusable/Navbar.svelte'
+
+    interface Pages {
+		name: string,
+		url: string,
+	}
+
+    let menu:Pages[] = [
+		{ name: 'Hospital of Baranquilla', url: '/projectdesc' },
+		
+	];
 </script>
             <Navbar/>
             
@@ -25,7 +36,7 @@
                                     <img class="rounded-2xl" style="width: 568px; height: 183px;" src="../../../../img/solarBaranquilla.jpg" alt=""/>
                                     <div class="relative" style="width: 521px; height: 150px;">
                                         
-                                        <button class="absolute left-0 top-0 text-lg font-bold text-gray-800">Hospital Of Baranquilla</button>
+                                        <button on:click={() => window.location.href = './projectdesc' }><span class="absolute left-0 top-0 text-lg font-bold text-gray-800">Hospital Of Baranquilla</span></button>
                                         
                                         <p class="w-28 h-16 absolute right-0 top-0  text-md font-bold text-gray-500">Baranquilla, Colombia</p>
                                         <div class="inline-flex flex-col space-y-0.5 items-center justify-mid w-24 h-16 relative left-14 -bottom-20">
