@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import { onDestroy, onMount } from 'svelte';
   import { slide } from 'svelte/transition';
   import {
     ethers,
@@ -25,23 +25,38 @@
     transactionErrorHandling,
   } from '$lib/state/state';
 
-  import { Modal, modalStore } from '@skeletonlabs/skeleton';
-  import type { ModalSettings, ModalComponent } from '@skeletonlabs/skeleton';
-
-  onMount(() => {
-    // getP2PBalance()
-  });
-  import ERC20ABI from '$lib/abi/ERC20.json';
   import P2PTokenABI from '$lib/abi/P2PToken.json';
   import StakingABI from '$lib/abi/Staking.json';
 
+  let currentP2PStaked = 0;
+  let currentP2PRewards = 0;
 
-  let currentP2PStaked = 0
-  let currentP2PRewards = 0
+  const updater: {
+    provider?: BrowserProvider;
+    callback: () => unknown;
+  } = {
+    provider: undefined,
+    callback: () => {
+      if ($walletAddress) {
+        getP2PBalance();
+        getUser($walletAddress);
+      }
+    },
+  };
   walletAddress.subscribe((address) => {
-    if ($walletAddress) {
-      getP2PBalance();
-      getUser($walletAddress);
+    if (address && window.ethereum) {
+      if (!updater.provider) {
+        updater.callback();
+        updater.provider = new BrowserProvider(window.ethereum, 'any');
+        updater.provider.on('block', updater.callback);
+      } else {
+        updater.callback();
+      }
+    }
+  });
+  onDestroy(() => {
+    if (updater.provider) {
+      updater.provider.off('block', updater.callback);
     }
   });
 
@@ -131,7 +146,10 @@
     }
   }
 
-  async function withdrawStake(initial:number | string | bigint, reward: number | string | bigint) {
+  async function withdrawStake(
+    initial: number | string | bigint,
+    reward: number | string | bigint
+  ) {
     // console.log(stake)
     try {
       //@ts-ignore
@@ -141,14 +159,13 @@
         P2PStakingContractMumbai,
         StakingABI,
         signer
-      )
-      console.log(initial, reward)
+      );
+      console.log(initial, reward);
       const txWithdraw = await contract.withdrawTest(initial, reward);
       await txWithdraw.wait();
-    } catch(error) {
-      console.log(error)
+    } catch (error) {
+      console.log(error);
     }
-
   }
   async function claimRewards() {
     //@ts-ignore
@@ -158,12 +175,11 @@
       P2PStakingContractMumbai,
       StakingABI,
       signer
-    )
-
+    );
   }
   async function getUser(user: string) {
     //@ts-ignore
-        
+
     const provider = new BrowserProvider(window.ethereum, 'any');
     const signer = await provider.getSigner();
     const contract = new ethers.Contract(
@@ -172,16 +188,14 @@
       signer
     );
 
-        const txGetUser = await contract.getUserTest(user);
-        currentP2PStaked = txGetUser.balance;
-        currentP2PRewards = txGetUser.reward;
-        console.log(formatEther(txGetUser.balance), formatEther(txGetUser.reward));
-        
-  }   
-  
+    const txGetUser = await contract.getUserTest(user);
+    currentP2PStaked = txGetUser.balance;
+    currentP2PRewards = txGetUser.reward;
+    console.log(formatEther(txGetUser.balance), formatEther(txGetUser.reward));
+  }
 </script>
 
-<div class="bg-white w-[600px] z-50 px-5 shadow-lg rounded-[6px]">
+<div class="bg-white w-[600px] z-50 px-5 shadow-lg rounded-xl">
   <div class="">
     <div class="flex  py-5  gap-9 ">
       <h2 class="text-[1.500em] leading-[148%] text-[#333333]">
@@ -237,10 +251,15 @@
     <div class="basis-[55%] text-center ">
       <div class="flex flex-col gap-2">
         <h2 class="text-lg text-skin-lightDark">Staked {p2p.title}</h2>
-        <h2 class="text-2xl text-[#666666]">{Number(formatEther(currentP2PStaked)).toLocaleString()} P2P</h2>
+        <h2 class="text-2xl text-[#666666]">
+          {Number(formatEther(currentP2PStaked)).toLocaleString()} P2P
+        </h2>
         <p class="text-[#333333] text-base">Cooldown Period</p>
-        <h4 class="text-xs text-skin-muted">{currentP2PRewards ? 'Lock period ended' : ''}</h4>
-        <button on:click={(e)=>withdrawStake(currentP2PStaked, currentP2PRewards)}
+        <h4 class="text-xs text-skin-muted">
+          {currentP2PRewards ? 'Lock period ended' : ''}
+        </h4>
+        <button
+          on:click={(e) => withdrawStake(currentP2PStaked, currentP2PRewards)}
           class="py-2 px-3 rounded-[5px] border border-skin-green text-skin-green hover:scale-[1.05] transition"
         >
           Unstake and Claim
@@ -249,10 +268,15 @@
       <hr class="h-[3px] w-full my-6 px-3 bg-black opacity-30" />
       <div class="flex flex-col gap-2">
         <h2 class="text-lg text-skin-lightDark">Claimable {p2p.title}</h2>
-        <h2 class="text-2xl text-[#666666]">{Number(formatEther(currentP2PRewards)).toLocaleString()}</h2>
+        <h2 class="text-2xl text-[#666666]">
+          {Number(formatEther(currentP2PRewards)).toLocaleString()}
+        </h2>
         <p class="text-[#333333] text-base">Length of stake</p>
-        <h4 class="text-xs text-skin-muted">{currentP2PRewards ? '21 days' : 'N/A'}</h4>
-        <button on:click={claimRewards}
+        <h4 class="text-xs text-skin-muted">
+          {currentP2PRewards ? '21 days' : 'N/A'}
+        </h4>
+        <button
+          on:click={claimRewards}
           class="py-2 px-3 rounded-[5px] border border-skin-green text-skin-green hover:scale-[1.05] transition"
         >
           Claim {p2p.title}
