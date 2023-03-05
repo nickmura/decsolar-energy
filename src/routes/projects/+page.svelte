@@ -55,21 +55,33 @@
                                     <div class="relative" style="width: 521px; height: 150px;">
                                         
                                         <p class="absolute left-0 top-0 text-lg font-bold text-gray-800">Hospital Of Baranquilla</p>
+                                        
                                         <p class="w-28 h-16 absolute right-0 top-0  text-md font-bold text-gray-500">Baranquilla, Colombia</p>
                                         <div class="inline-flex flex-col space-y-0.5 items-center justify-mid w-24 h-16 relative left-14 -bottom-20">
                                             <div class="text-md font-bold  text-gray-500">Project Cost:</div> 
                                             <p class="w-full text-base font-bold text-green-700">      $ 400,000 800,000 </p>
-                                            <span class="inline-flex flex-col space-y-10 items-center justify-end w-20 h-16 relative left-20 bottom-16">
+                                            <span class="inline-flex flex-col space-y-9 items-center justify-end w-20 h-16 relative left-20 bottom-16">
                                                 <p class="text-md font-bold  text-gray-500">APR:</p>
                                                 
                                                 <p class="text-md font-bold text-green-700">15.2%</p>
                                             </span>
+                                            
                                         </div>
                                        
-                                        <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-16 absolute right-0 bottom-0">
-                                          
-                                        </div>
+                                        <div class="inline-flex flex-col space-y-8  items-center justify-end w-30 h-14 absolute left-60 -bottom-3">
 
+                                                <p class="text-md font-bold  text-gray-500">Date:</p>
+                                                
+                                                <p class="text-md font-bold text-green-700">06/15/23</p>
+                                         
+                                        </div>
+                                        <div class="inline-flex flex-col space-y-10  items-center justify-end w-30 h-14 absolute right-20 -bottom-3">
+
+                                            <p class="text-md font-bold  text-gray-500">%Completed</p>
+                                            
+                                            <p class="text-md font-bold text-green-700">30.2%</p>
+                                     
+                                    </div>
                                
                                     </div>
                                 </div>
@@ -90,10 +102,20 @@
                                             </span>
                                         </div>
                                         
-                                        <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-16 absolute right-0 bottom-0">
-                                         
-                                        </div>
+                                        <div class="inline-flex flex-col space-y-11  items-center justify-end w-30 h-14 absolute left-60 -bottom-3">
 
+                                            <p class="text-md font-bold  text-gray-500">Date:</p>
+                                            
+                                            <p class="text-md font-bold text-green-700">09/23/23</p>
+                                     
+                                    </div>
+                                    <div class="inline-flex flex-col space-y-10  items-center justify-end w-30 h-14 absolute right-20 -bottom-3">
+
+                                        <p class="text-md font-bold  text-gray-500">%Completed</p>
+                                        
+                                        <p class="text-md font-bold text-green-700">14.7%</p>
+                                 
+                                </div>
                                         </div>
                              
                                 </div>
@@ -117,10 +139,20 @@
                                             </span>
                                         </div>
                                       
-                                        <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-16 absolute right-0 bottom-0">
-                                         
-                                        </div>
- 
+                                        <div class="inline-flex flex-col space-y-10  items-center justify-end w-30 h-14 absolute left-60 -bottom-3">
+
+                                            <p class="text-md font-bold  text-gray-500">Date:</p>
+                                            
+                                            <p class="text-md font-bold text-green-700">08/19/23</p>
+                                     
+                                    </div>
+                                    <div class="inline-flex flex-col space-y-10  items-center justify-end w-30 h-14 absolute right-20 -bottom-3">
+
+                                        <p class="text-md font-bold  text-gray-500">%Completed</p>
+                                        
+                                        <p class="text-md font-bold text-green-700">20.5%</p>
+                                 
+                                </div>
                                         
                                     
                                     </div>
@@ -142,9 +174,21 @@
                                             </span>
                                         </div>
 
-                                        <div class="inline-flex flex-col space-y-3 items-center justify-end w-24 h-16 absolute right-0 bottom-0">
+                                        <div class="inline-flex flex-col space-y-10  items-center justify-end w-30 h-14 absolute left-60 -bottom-3">
+
+                                            <p class="text-md font-bold  text-gray-500">Date:</p>
                                             
-                                        </div>
+                                            <p class="text-md font-bold text-green-700">02/15/23</p>
+                                     
+                                    </div>
+
+                                    <div class="inline-flex flex-col space-y-10  items-center justify-end w-30 h-14 absolute right-20 -bottom-3">
+
+                                        <p class="text-md font-bold  text-gray-500">%Completed</p>
+                                        
+                                        <p class="text-md font-bold text-green-700">60.5%</p>
+                                 
+                                </div>
                    
                                         </div>
                                     </div>
