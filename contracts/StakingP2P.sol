@@ -23,7 +23,7 @@ contract StakingContract {
         rewardPerTokenStored = 0;
     }
 
-    function stake(uint256 amount) external {
+    function stake(uint256 amount) external payable {
         require(amount > 0, "Cannot stake 0 tokens");
         updateReward(msg.sender);
         token.transferFrom(msg.sender, address(this), amount);

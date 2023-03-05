@@ -2,7 +2,7 @@
 
 import { onMount } from "svelte";
 import { slide } from 'svelte/transition'
-import { ethers, Contract, BrowserProvider, formatEther, type BigNumberish } from "ethers";
+import { ethers, Contract, BrowserProvider, formatEther, parseEther, type BigNumberish } from "ethers";
 import { 
   walletAddress,
   connectedNetwork,
@@ -14,7 +14,9 @@ import {
   P2PTokenContractBaseGoerli,
   P2PStakingContractBaseGoerli,
   P2PTokenContractMumbai,
-  P2PStakingContractMumbai
+  P2PStakingContractMumbai,
+  stakeTransactionId,
+  transactionErrorHandling
 } from "$lib/state/state";
 
 
@@ -23,26 +25,33 @@ import { Modal, modalStore } from '@skeletonlabs/skeleton';
 import type { ModalSettings, ModalComponent } from '@skeletonlabs/skeleton';
 
 
-let P2PStaked:number | string
-$: P2PStaked = 0
 onMount(() => {
   // getP2PBalance()
 })
 import ERC20ABI from '$lib/abi/ERC20.json'
 import P2PTokenABI from '$lib/abi/P2PToken.json'
-import StakingABI from '$lib/abi/P2PToken.json'
+import StakingABI from '$lib/abi/Staking.json'
 
 
 walletAddress.subscribe(address => {
-  if ($walletAddress) getP2PBalance()
+  if ($walletAddress) {
+    getP2PBalance()
+    getUser($walletAddress)
+  }
+
 })
+
+
+
+let P2PStaked:number | string | bigint
+$: P2PStaked = 0
 
 let P2PBalance: BigNumberish
 $: P2PBalance = 0n
 
+
 async function getP2PBalance() {
   //@ts-ignore
-
   const provider = new BrowserProvider(window.ethereum, "any")
   const P2PBase =  new Contract(P2PTokenContractBaseGoerli, P2PTokenABI, provider);
   const P2PMumbai =  new Contract(P2PTokenContractMumbai, P2PTokenABI, provider);
@@ -52,7 +61,9 @@ async function getP2PBalance() {
   if ($connectedNetwork == 80001) {
     P2PBalance = await P2PMumbai.balanceOf($walletAddress)
   } else {
+
     P2PBalance = await P2PBase.balanceOf($walletAddress)
+    console.log(P2PBalance)
   }
 }
 
@@ -64,6 +75,62 @@ function toggleDrawer() {
 }
 
 
+async function stakeP2P(stake:number | string | bigint) {
+  console.log(stake)
+  if ($connectedNetwork === 80001) {
+    try {
+      //@ts-ignore
+    const provider = new BrowserProvider(window.ethereum, "any")
+    const signer = await provider.getSigner()
+
+    const contract = new Contract(P2PStakingContractMumbai, StakingABI, signer)
+    console.log(BigInt(stake))
+    const txStake = await contract.stake(stake)
+    await txStake.wait()
+
+    stakeTransactionId.set(txStake.hash)
+    } catch (error) {
+        if (error instanceof Error)
+        console.log(error)
+        if(error instanceof Error)
+        if (error.message.includes('User denied transaction signature.')) {
+          transactionErrorHandling.set('')
+        }
+      } 
+    } 
+    else if ($connectedNetwork === 84531) {
+
+      try {
+        //@ts-ignore
+        const provider = new BrowserProvider(window.ethereum, "any")
+        const signer = await provider.getSigner()
+        const contract = new ethers.Contract(P2PStakingContractBaseGoerli, StakingABI, signer)
+
+        const txStake = await contract.stake(stake)
+        await txStake.wait()
+
+        stakeTransactionId.set(txStake.hash)
+        } catch (error) {
+          if (error instanceof Error)
+          if (error.message.includes('User denied transaction signature.')) {
+            transactionErrorHandling.set('')
+          }
+          if(error instanceof Error)
+          console.log(error.message)
+        } 
+    }
+
+  }
+  async function getUser(user:string) {
+    //@ts-ignore
+        const provider = new BrowserProvider(window.ethereum, "any")
+        const signer = await provider.getSigner()
+        const contract = new ethers.Contract(P2PStakingContractMumbai, StakingABI, signer)
+
+        const txGetUser = await contract.getUserTest(user);
+        console.log(formatEther(txGetUser.balance), formatEther(txGetUser.reward));
+        
+  }   
 
 </script>
 
@@ -176,7 +243,8 @@ function toggleDrawer() {
                   </div>
 
                   <div class='flex justify-center mt-2'>
-                    <button class='w-full px-3 py-3 bg-[#23b102] rounded-xl hover:scale-[1.05] transition font-bold text-white'>Stake your P2P</button>
+                    <button on:click={(e)=>stakeP2P(parseEther(String(P2PStaked)))} class='w-full px-3 py-3 bg-[#23b102] rounded-xl hover:scale-[1.05] 
+                    transition font-bold text-white'>Stake your P2P</button>
                   </div>
                 {/if}
               
