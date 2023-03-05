@@ -90,9 +90,11 @@
             <div
               class="w-full gap-20 flex flex-col items-start self-stretch h-[298px]"
             >
+            <img class="absolute -left-80 bottom-40" style="left: 525px; bottom: 22px;"  src="../../../../img/metamask.svg" alt=""/>
               <div
                 class="w-full gap-5 flex flex-col items-start self-stretch h-[152px]"
               >
+
                 <div
                   class="w-full h-[66px] bg-[rgba(39,41,62,1)] rounded-[10px]"
                  />
