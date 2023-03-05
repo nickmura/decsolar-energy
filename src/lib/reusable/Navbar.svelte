@@ -8,10 +8,12 @@
     url: string;
   }
   let menu: Pages[] = [
+    {name: 'Home', url:'/home'},
     { name: 'Staking', url: '/staking' },
     { name: 'Projects', url: '/projects' },
     { name: 'Swap', url: '/swap' },
     { name: 'Invoices', url: '/invoices' },
+    
   ];
 </script>
 

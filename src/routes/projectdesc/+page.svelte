@@ -1,3 +1,13 @@
+<script>
+ 
+
+</script>
+
+
+
+
+
+
 <div class="max-w-[1600px] w-full gap-4 flex flex-col">
   <h1 class="text-4xl font-semibold">Project</h1>
   <div class="text-xl text-secondaryText font-semibold flex w-full mb-4">
