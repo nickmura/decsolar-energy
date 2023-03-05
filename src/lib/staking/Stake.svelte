@@ -35,6 +35,9 @@
   import P2PTokenABI from '$lib/abi/P2PToken.json';
   import StakingABI from '$lib/abi/Staking.json';
 
+
+  let currentP2PStaked = 0
+  let currentP2PRewards = 0
   walletAddress.subscribe((address) => {
     if ($walletAddress) {
       getP2PBalance();
@@ -139,10 +142,12 @@
     );
 
         const txGetUser = await contract.getUserTest(user);
+        currentP2PStaked = txGetUser.balance;
+        currentP2PRewards = txGetUser.reward;
         console.log(formatEther(txGetUser.balance), formatEther(txGetUser.reward));
         
   }   
-
+  
 </script>
 
 <div class="bg-white w-[600px] z-50 px-5 shadow-lg rounded-[6px]">
@@ -201,7 +206,7 @@
     <div class="basis-[55%] text-center ">
       <div class="flex flex-col gap-2">
         <h2 class="text-lg text-skin-lightDark">Staked {p2p.title}</h2>
-        <h2 class="text-2xl text-[#666666]">{$totalStaked}</h2>
+        <h2 class="text-2xl text-[#666666]">{Number(formatEther(currentP2PStaked)).toLocaleString()} P2P</h2>
         <p class="text-[#333333] text-base">Cooldown Period</p>
         <h4 class="text-xs text-skin-muted">{$cooldownPeriod}</h4>
         <button
@@ -213,7 +218,7 @@
       <hr class="h-[3px] w-full my-6 px-3 bg-black opacity-30" />
       <div class="flex flex-col gap-2">
         <h2 class="text-lg text-skin-lightDark">Claimable {p2p.title}</h2>
-        <h2 class="text-2xl text-[#666666]">{$totalClaimable}</h2>
+        <h2 class="text-2xl text-[#666666]">{Number(formatEther(currentP2PRewards)).toLocaleString()}</h2>
         <p class="text-[#333333] text-base">{p2p.title} per month</p>
         <h4 class="text-xs text-skin-muted">{$claimPerMonth}</h4>
         <button
