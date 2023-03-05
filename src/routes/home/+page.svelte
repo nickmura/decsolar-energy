@@ -110,9 +110,12 @@
               <div
                 class="[box-shadow:0px_0px_0px_1px_white_inset] [box-shadow-width:1px] opacity-25 w-[353px] h-[66px] rounded-[10px]"
                />
+               
+              
               <div
                 class="[box-shadow:0px_0px_0px_1px_white_inset] [box-shadow-width:1px] opacity-25 w-[353px] h-[66px] rounded-[10px]"
                />
+              
             </div>
            
           </div>
@@ -164,7 +167,8 @@
             >
             
               </div>
-              <img class="relative -left-80 top-20" style="left: -500px; top: 500px; width: 2000px; height: 400px;"  src="../../../../img/solarcar.jpg" alt=""/>
+              <img class="relative -left-80 top-20" style="left: -500px; top: 500px; width: 2000px; height: 400px;"  src="../../../../img/solarcar.png" alt=""/>
+              <img class="relative -left-80 top-20" style="left: -200px; top: -1px;"  src="../../../../img/metamask.svg" alt=""/>
             </div>
           </div>
         </div>
